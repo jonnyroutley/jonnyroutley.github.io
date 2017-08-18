@@ -145,7 +145,7 @@ p {
 .parallax__layer--back {
     transform: translateZ(-2px) scale(3);
     text-align: center;
-    background-image: url(file:///Users/jonathanroutley/Documents/jonathanroutley.co.uk/images/The-Amazing-Spider-Man-still-3.jpeg);
+    background-image: url(images/The-Amazing-Spider-Man-still-3.jpeg);
     width: 100vw;
     margin: 0;
     padding: 0;

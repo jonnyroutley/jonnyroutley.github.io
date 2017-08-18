@@ -1,0 +1,340 @@
+/* Main Page */
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+li a {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    float: left;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.05vw;
+    font-size: 1vw;
+    font-style: thin;
+    letter-spacing: 0.06vw;
+}
+
+li#nav-main a {
+    color: white;
+}
+
+li#nav-sections a {
+    color: black;
+}
+
+li#nav-main a:hover {
+    color: #e0e0e0
+}
+
+li#nav-sections a:hover {
+    color: #444444;
+}
+
+h1 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 1vw;
+}
+
+h2 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2vw;
+}
+
+h3 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+h4 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+
+h5 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: justify;
+    color: #8e8e8e;
+    font-size: 1.1vw;
+
+}
+
+/* h6 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #9b9b9b;
+    font-size: 0.8vw;
+    text-align: center;
+
+} */
+
+p {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #9b9b9b;
+    font-size: 1vw;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1vw;
+}
+
+
+.title-text {
+    opacity: 1;
+    margin-top: 18%;
+    
+}
+
+.section {
+    padding-top: 10vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    }
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+
+.parallax__layer--base {
+    transform: translateZ(0);
+    text-align: center;
+    }
+
+.parallax__layer--back {
+    transform: translateZ(-2px) scale(3);
+    text-align: center;
+    background-image: url(file:///Users/jonathanroutley/Documents/jonathanroutley.co.uk/images/The-Amazing-Spider-Man-still-3.jpeg);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-attachment: fixed;    
+    }
+
+.parallax__group {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 100vh;
+    }
+
+#about {
+    background-color: white;
+    height: 65vh;
+    padding: 5vw 8vw;
+    color: #232323
+}
+
+#contents {
+    background-color: #f5f5f5;
+    height: 100vh;
+    padding: 5vw 8vw;
+}
+
+#footer {
+    background-color: #102027;
+    height: 50vh;
+    color: white;
+    padding: 5vw 8vw;
+    }
+
+
+
+#h1-pages {
+    text-align: center;
+}
+
+.wrapper-pages {
+    display: grid;
+    grid-gap: 1.3vw;
+    grid-template-columns: repeat(3, 27vw); 
+    grid-template-rows: 100%;
+    
+}
+
+
+.main-body-pages {
+    padding: 10px;
+}
+
+.img-pages {
+    width: 26vw;
+    height: 26vw;
+    justify-content: stretch;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#icon-one {
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/b0/a7/84/b0a784ed11e57be8d173c50481bf81b8.jpg');
+}
+
+#icon-two {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Types_of_Carbon_Nanotubes.png');
+}
+
+#icon-three {
+    background-image: url('http://explorebkv2.wpengine.com/wp-content/uploads/2014/05/williamsburg-bridge-brooklyn-sunset.jpg');
+}
+
+.text-pages a {
+    text-decoration: none;
+    color: #232323;
+    display: block;
+    /* margin-top: 20px; */
+    margin: 2vw 1vw;
+    border: 1px solid #232323;
+    border-radius: 30px;
+    font-size:1.2vw;
+}
+
+.text-pages a:hover {
+    color: white;
+    background-color: #232323;
+}
+
+.section-header {
+    text-align: center;
+}
+
+/* Section Pages */
+
+#section-one-body{
+    /* height: 150vh; */
+    background-color: white;
+    padding: 5vw 24vw;
+}
+
+.section-text {
+    text-align: justify;
+    line-height: 150%;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub { 
+    top: 0.4em; 
+  }
+
+.nav-buttons-wrapper {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2, 18vw); 
+    grid-template-rows: 100%;
+    margin: 5vw 10vw 5vw 8vw;
+}
+
+.nav-buttons-wrapper a{
+    text-decoration: none;
+    color: #232323;
+    border: 1px solid #232323;
+    border-radius: 30px;
+    font-size:1.2vw;
+    text-align: center;
+    
+}
+
+.nav-buttons-wrapper a:hover {
+    color: white;
+    background-color: #232323;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* .maths {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+} */
+
+#maths_1 {
+    margin-left: 16vw;
+}
+#maths_2 {
+    margin-left: 14vw;
+}
+#maths_3 {
+    margin-left: 16vw;
+}
+#maths_4 {
+    margin-left: 15vw;
+}
+#maths_5 {
+    margin-left: 5vw;
+}
+#maths_6 {
+    margin-left: 15.5vw;
+}
+#maths_7 {
+    margin-left: 15vw;
+}
+#maths_8 {
+    margin-left: 16vw;
+}
+#maths_9 {
+    margin-left: 7vw;
+}
+#maths_10 {
+    margin-left: 2vw;
+}
+
+iframe {
+    margin: 1vw 6vw;
+    width: 40vw;
+    height: 22vw;
+}
+
+#references-text {
+    column-count: 2;
+}
+
+

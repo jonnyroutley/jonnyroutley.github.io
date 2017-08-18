@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jonathan Routley</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <script type="text/javascript" src="site.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="navigation">
+    <ul class="navbar">
+        <li id="nav-sections"><a href="what-can-engineers-learn-from-spider-man.html">&#8626 RETURN</a></li>
+        <li id="nav-sections"><a href="index.html">JONATHAN ROUTLEY</a></li>
+        <li id="nav-sections" style="float:right"><a href="about.html">CONTACT</a></li>
+        <li id="nav-sections" style="float:right"><a href="pages.html">CONTENTS</a></li>
+        <li id="nav-sections" style="float:right"><a href="shop.html">ABOUT</a></li>
+    </ul>
+</div>
+<div id="section-one-body">
+    <p class="section-header">SECTION 1</p>
+    <h2>THE PHYSICS OF SPIDER-MAN</h2>
+    <h4 class="section-text">
+        Spider-Man first appeared over 55 years ago, in the fifteenth installment of the comic book <i>Amazing Fantasy</i>. Since its inception in August 1962, Spider-Man has gone on to be one of the most popular and commercially successful superheroes ever. Many attribute this to the fact that Spider-Man, or Peter Parker, was a new breed of superhero who was relatable in a way that the traditional comic book titans such as Batman and Superman weren't<sup>[1]</sup>. He's a not-so-cool teenager who gets picked on by bullies, isn't good with girls and has to face everyday struggles like the rest of us. It's only when Peter is bitten by a radioactive spider on a school trip to a lab that he develops powers: namely super strength, the ability to scale walls effortlessly and 'spider senses'. This section looks at the physics of Spider-Man, primarily using the 2012 film (starring Andrew Garfield) <i>The Amazing Spider-Man</i> as the main reference point.
+    </h4>
+    <h3>How Strong are Spider-Man's Webs?</h3>
+    <h4 class="section-text">
+        While some adaptations of Spider-Man show the webs that the eponymous hero employs as an organic subtance that he produces within himself, most versions (this film included) portray the webs as an externally manufactured substance. In this particular film, the web has been originally created by the giant trans-national corporation 'Oscorp' and then modified by Peter Parker to fit into small cannisters loaded into a wrist-watch which can subseqently be triggered via touch sensors on his palms.
+        One scene in this film shows Spider-Man catching a car that has been thrown off Williamsburg Bridge with his webs - using this scene, we can try and estimate the rough maximum strength of the webs. You can watch this scene below:
+    </h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e1fmhSJa8ME?start=66&end=84" frameborder="0" allowfullscreen></iframe>
+    <h4 class="section-text">
+        The first things to determine are the mass and length of the car in question. Below is a snapshot of the film which shows the car falling, and which was subsequently identified by the 'Internet Movie Cars Database (IMCDB)' as being a Mercedes-Benz S-Klasse Stretched Limousine<sup>[2]</sup>. As information about this car online was fairly limited, I opted to use specs from the most recent update of this car - the 2017 Mercedes-Maybach S600. This car is about 5.5m long and weighs around 2400kg<sup>[3]</sup>.
+    </h4>
+    <img src="images/merc.jpg" width="100%">
+    <h4 class="section-text">
+        Using this information, we can start to estimate the downwards momentum of the falling car. Before we can do this, however, we need a value for the velocity of the car before it is brought to a halt. We can use the constant acceleration (SUVAT) equations for this. At around 1:20 into the video above, we see that the car is suspended just above the waterline. As the distance from the water to the bridge is 41m<sup>[4]</sup> (assuming high tide) and the length of the car is 5.5m, I assigned the value of <i>s</i> (the distance the car falls) to be 35m. Assuming the car starts from rest, we can then say that:
+    </h4>
+    <img src="images/maths/Maths 1.jpg" width="50%" class="maths" id="maths_1">
+    <h4 class="section-text"> 
+        where <i>v</i> is the final velocity of the car, <i>u</i> is the initial velocity of the car and <i>a</i> is the acceleration of the car downwards due to gravity. Now that we have values for both the velocity and mass of the car, we can work out its momentum before it's stopped.
+    </h4>
+    <img src="images/maths/Maths 2.jpg" width="42%" class="maths" id="maths_2">
+    <h4 class="section-text">
+        As we know that it takes some time for the web to slow the car down, making the assumption that this stopping time is 1 second makes our calculations a bit easier (and is not unreasonable compared to the video above). The force (tension) that the web holds in bringing the car from its current state to at rest is the change in momentum divided by the change in time (1 second), or:
+    </h4>
+    <img src="images/maths/Maths 3.jpg" width="24%" class="maths" id="maths_3">
+    <h4 class="section-text">
+        We can then find the tension easily (approx value given but exact value used in later calculations):
+    </h4>
+    <img src="images/maths/Maths 4.jpg" width="35%" class="maths" id="maths_4">
+    <h4 class="section-text">
+        Although we're now close, we're not quite there. in order to find a good comparitive value for the strength of this web, we want to find the <i>Ultimate Tensile Strength (UTS)</i>. UTS is effectively a measure of how much a material can stand being stretched or pulled on before snapping<sup>[5]</sup>, and is useful in this instance for comparison as it's measured in N/m<sup>2</sup> - were it to not have this '/m<sup>2</sup>' feature, the obvious flaw would be that a thicker string or material would be able to bear a weightier load. In this instance, I'm going to guess that a typical web might have a radius of 2mm:
+    </h4>
+    <img src="images/maths/Maths 5.jpg" width="80%" class="maths" id="maths_5">
+    <img src="images/maths/Maths 6.jpg" width="30%" class="maths" id="maths_6">
+    <h4 class="section-text">
+        We can finally therefore work out the UTS of the web given its equation. Note how it's converted from N/m<sup>2</sup>, or Pascals (Pa), to MegaPascals (MPa):
+    </h4>
+    <img src="images/maths/Maths 7.jpeg" width="45%" class="maths" id="maths_7">
+    <h4 class="section-text">
+        There we have it! His webs are around 5000MPa strong - roughly 5x the strength of ordinary spider silk. How does this stand up to what the film says?
+    <span style="color:red"><b><i>bit needed here! 'ten times stronger than steel' thing. put in reference for spider silk also</i></b></span>
+
+        In the next section we will look at what this means in a real world context and compare it to current man-made materials. For now, however, we will look at another aspect of Spider-Man.
+    </h4>
+    <h3>How Much Web Can He Carry?</h3>
+    <h4 class="section-text">
+        Having worked out its strength, the next thing we might want to know about Spider-Man's webs is how much he could carry around with him. The
+    </h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZVHLpWsK-GI?start=53&end=78" frameborder="0" allowfullscreen></iframe>
+    <h4 class="section-text">
+        The video states that a single one of these canisters (pictured below) can safely store 'several hundred metres of the lightweight cable'. Rather than try to deal with the semantics of 'several', I'm going to assign it the value of 5, i.e. 500 metres of cable. 
+    </h4>
+    <img src="images/Web Canisters.png" width="100%">
+    <h4 class="section-text">
+        Assuming that the dimensions of the canister are around 3cm x 2cm x 1cm,
+    </h4>
+    <img src="images/packing 1.jpg" width="100%" class="packing">
+
+    <h4 class="section-text">
+        boop
+    </h4>
+    <img src="images/packing 2.jpg" width="100%" class="packing">
+    <h4 class="section-text">
+        We want to consider the 'packing efficiency' or <i>atomic packing factor (APF)</i> of these two designs - this will tell us which way of packing in the webs will utilise the available space best. Note also that for simplicity's sake I'm assuming that the web is able to fold back on itself <span style="color:red">check this with Dad</span> infinitely well and that no extra space is taken up. The APF is a dimensionless (without units) value and is given by the formula:
+    </h4>
+    <img src="images/maths/Maths 8.jpeg" width="40%" class="maths" id="maths_8">
+    <h4 class="section-text">
+        Where <i>N<sub>particle</sub></i> is the number of particles in the area we're trying to work out, <i>V<sub>particle</sub></i> is the volume of the particles and <i>V<sub>unit cell</sub></i> is the volume of the container. In this instance, the particles are the circles, the unit cell is the canister and instead of volumes we're considering just areas as it's a 2-dimensional diagram. For each of the two designs, this gives us:
+    </h4>
+    <img src="images/maths/Maths 9.jpg" width="35%" class="maths" id="maths_9">
+    <img src="images/maths/Maths 10.jpg" width="32.5%" class="maths" id="maths_10">
+    <h4 class="section-text">
+        Although the second design fits in one fewer circle, it is overall more efficient in the way it uses the space available. This is useful knowledge as we'll want to scale up the container and this design will help us yield better results over a larger area. This would also make for a marginally lighter design which would be more practical from Spider-Man's perspective.
+    </h4>
+    <h3>Is It Faster To Run Or Swing?</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CsencLwGCLI?start=440&end=463" frameborder="0" allowfullscreen></iframe>
+    <h3>How Does He Stick To Walls?</h3>
+
+
+
+    <div class="nav-buttons-wrapper">
+        <a href="what-can-engineers-learn-from-spider-man.html">
+            <h3>&#8592 Return to Main Page</h3>
+        </a>
+        <a href="translation-to-the-real-world.html">
+            <h3>Next Section &#8594</h3>
+        </a>
+    </div>
+</div>
+<div id="footer">
+    <h2>REFERENCES</h2>
+    <br />
+    <div id="references-text">
+        <p>
+            [1] ROBINSON, B. (2015). Why Spider-Man Is Popular. [online] ABC News. Available at: http://abcnews.go.com/Entertainment/story?id=101230&page=1 [Accessed 13 Aug. 2017].
+        </p>
+        <p>
+            [2] Internet Movie Cars Database. (2012). Mercedes-Benz S-Klasse Stretched Limousine [V221]. [online] Available at: http://www.imcdb.org/vehicle_501912-Mercedes-Benz-S-Klasse-Stretched-Limousine-V221.html [Accessed 14 Aug. 2017].
+        </p>
+        <p>
+            [3] Mercedes-Benz USA. (2017). 2017 Mercedes-Maybach S600 Specifications. [online] Available at: https://www.mbusa.com/mercedes/vehicles/model/class-S/model-S600X#!layout=/vehicles/model/specs&class=S&model=S600X&waypoint=model-specs [Accessed 14 Aug. 2017].
+        </p>
+        <p>
+            [4] Skyscraperpage.com. (2017). Williamsburg Bridge, New York City - SkyscraperPage.com. [online] Available at: https://skyscraperpage.com/cities/?buildingID=4562 [Accessed 14 Aug. 2017].
+        </p>
+        <p>
+            [5] Corrosionpedia. (n.d.). What is an Ultimate Tensile Strength (UTS)?. [online] Available at: https://www.corrosionpedia.com/definition/1126/ultimate-tensile-strength-uts [Accessed 18 Aug. 2017].
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

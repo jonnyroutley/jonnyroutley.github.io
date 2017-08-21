@@ -393,3 +393,15 @@ a.accordion.active h3:after {
 p sup {
     color: white;
 }
+
+h4 a {
+    text-align: center;
+    margin-left: 38vw;
+    text-decoration: none;
+    color: black;
+    
+}
+
+h4 a:hover {
+    color: #505050;
+}

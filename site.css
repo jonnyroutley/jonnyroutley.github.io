@@ -88,7 +88,7 @@ h5 {
 
 }
 
-/* h6 {
+h6 {
     font-family: 'Lato', 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -96,7 +96,7 @@ h5 {
     font-size: 0.8vw;
     text-align: center;
 
-} */
+}
 
 p {
     font-family: 'Lato', 'Open Sans', sans-serif;
@@ -338,3 +338,58 @@ iframe {
 }
 
 
+#footer a {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #9b9b9b;
+}
+
+#footer a:hover {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #66c1e2;
+}
+
+
+a.accordion {
+    cursor: pointer;
+    padding: 0.8vw;
+    transition: 0.4s;
+}
+
+a.accordion:hover {
+    color: #808080;
+}
+
+.accordion h3 {
+    font-size: 1.5vw;
+    width: 97.5%;
+}
+
+
+div.panel {
+    /* padding: 0 18px;  */
+    background-color: white;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+
+a.accordion h3:after {
+    content: '\2190'; 
+    font-size: 1.5vw;
+    /* margin-left: 2vw; */
+    float:right;
+    width: 1px;
+}
+
+
+a.accordion.active h3:after {
+    content: "\2193";
+    width: 1px;
+}
+
+p sup {
+    color: white;
+}

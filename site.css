@@ -405,3 +405,11 @@ h4 a {
 h4 a:hover {
     color: #505050;
 }
+
+#pendulum {
+    margin-left: 13vw;
+}
+
+#skateboarding {
+    margin-left: 18vw;
+}

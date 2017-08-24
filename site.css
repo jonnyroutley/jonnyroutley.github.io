@@ -152,6 +152,7 @@ p {
     background-repeat: no-repeat;
     background-size: 105%;
     background-attachment: fixed;    
+
     }
 
 .parallax__group {
@@ -175,7 +176,7 @@ p {
 
 #footer {
     background-color: #102027;
-    height: 50vh;
+    /* height: 80vh; */
     color: white;
     padding: 5vw 8vw;
     }
@@ -252,6 +253,8 @@ p {
     text-align: justify;
     line-height: 150%;
 }
+
+
 
 sup, sub {
     vertical-align: baseline;
@@ -333,7 +336,7 @@ iframe {
     height: 22vw;
 }
 
-#references-text {
+.references-text {
     column-count: 2;
 }
 
@@ -398,12 +401,12 @@ h4 a {
     text-align: center;
     margin-left: 38vw;
     text-decoration: none;
-    color: black;
+    color: #9F0808;
     
 }
 
 h4 a:hover {
-    color: #505050;
+    color: #032766;
 }
 
 #pendulum {
@@ -412,4 +415,19 @@ h4 a:hover {
 
 #skateboarding {
     margin-left: 18vw;
+}
+
+#footer h4 {
+    text-align: center;
+}
+
+#gecko {
+    margin-left: 2.5vw;
+}
+
+.quotation {
+    padding: 0vw 3vw;
+    font-style: italic;
+    line-height: 120%;
+    color: #3D3D3D;
 }

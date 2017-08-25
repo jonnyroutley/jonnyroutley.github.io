@@ -84,26 +84,58 @@
             The question that this then prompts is this: is it really faster for Spider-Man to swing? If we model his movement like that of a pendulum then we can make it a harmonic motion question. This would mean that the main thing affecting his swing speed is the length of the web he's swinging on - we can see from the video that the arches of the tunnel he attaches his webs to are not <i>that</i> high, and also he takes a non-direct/slower zig-zag route. Would it then potentially be faster for him to skateboard (his skills shown below)<sup>[d]</sup> or even run?  
         </h4>  
         <img src="images/skateboarding.gif" width="30%" id="skateboarding">
-        <sup>[e]</sup>
+        <h4 class="section-text">
+            First off, there are a few assumptions we need to state if we want to model this as simple harmonic motion (SHM) - the type of motion where a restoring force, proportional in magnitude to the displacement, acts in the opposite direction of said displacement (illustrated below<sup>[e]</sup>, although the acceleration is labelled instead of the force). They are:
+        </h4>
+        <ul class="body-list">
+            <li>The web (just in this case) is massless.</li>
+            <li>The system is frictionless.</li>
+            <li>Spider-Man, at the end of the web, behaves like a mass point.</li>
+        </ul>
+        <br />
         <img src="images/Oscillating_pendulum.gif" width="50%" id="pendulum">
         <h4 class="section-text">
-            Average height of a man is <sup>[8]</sup> 176
-        </h4>    
+            By modelling Spider-Man's motion as that of a pendulum displaying simple harmonic motion, we can start to unravel the problem. Usually with SHM, we can say that if <i>T</i> is the time period taken for one oscillation of the pendulum, <i>L</i> is the length of the web and <i>g</i> is the gravitational constant, then<sup>[f]</sup>
+        </h4>
+        <img src="images/T_equation.svg" width="55%" id="T_equation">    
+        <h4 class="section-text">
+            This, however, only holds for the small angle approximation - Spiderman (being a physicist) would know that his velocity would be dependent on his starting angle to the vertical and that this value would be greater than about 15°. In order to correct for this, we can use this second equation<sup>[g][8]</sup>
+        </h4>
+        <img src="images/pendulum_equation.svg" width="100%" id="mathspendulum">
+        <h4 class="section-text">
+            This is a numerical approximation in an infinite series - this equation is required as the time period increases gradually with the starting angle. Using this equation, we can calculate the time taken for Spider-Man to complete a swing (note that the equation we will use is half of the one above as a swing in our instance is only from one side to the other and not back again). As we can also figure out the horizontal distance travelled in a single swing (<i>2Lsin(θ)</i>  for any pendulum with length <i>L</i> and angle from the vertical <i>θ</i> ), we can combine these two values in with the simple relationship that average velocity = total distance travelled/total time taken. We can see what this looks like by varying both starting angle and pendulum/web length. I did this in Microsoft Excel, and my results can be found below both as a table and graphically. The left blue column is the starting angle in degrees, the top blue column is web length in metres and the red columns are average velocity in metres/second.
+        </h4>
+        <img src="images/Pendulums_Table.jpg" width="65%" id="pend_table">
+        
+        <img src="images/Pendulums_Graph.jpg" width="80%" id="pend_graph">
+        <h4 class="section-text">
+            What we see is that, as expected, velocity increases with pendulum length and also starting angle, up until a maximum point of around 80°. Before we get ahead of ourselves, however, let's bring our focus back to the scenario at hand: Spider-Man is swinging in a zig-zag fashion through a tunnel. What we want to find out now is the height of the tunnel and the distance he covers - this will enable us to compare it to the time it would take for him to run or skateboard.
+            <br /><br />
+            As it turns out, this tunnel is actually the 125th street viaduct<sup>[9]</sup>. Here is a snapshot of the viaduct from street level, taken from Google Maps:
+        </h4> 
+        <img src="images/viaduct1.png">
+        <h4 class="section-text">
+                Using the second picture, we see that there is a man standing towards the bottom-left corner. Taking the average height of an American man to be 176cm<sup>[10]</sup>, and estimating that this man fits into the column behind him about 7 times, this gives us a total height of around 12m. We also know that Spider-Man doesn't touch the ground but is above the cars, so for simplicity's sake we can say that the web length is 10m, and that he knows for each swing to start from the optimum angle of 80°. The final piece of this problem now is to estimate the width of the tunnel, and thus a model of the path he takes. Using the same method of using that man as a reference point, I get the width of the tunnel to be a similar figure of around 10m (this is the best I can do as I couldn't find any specifications of the viaduct online). If we say now that Spider-Man zig-zags in a perfect 45° fashion each time for 6 swings, we can use the fact that <i>tan(45° ) = 1</i>   like so: 
+        </h4>
+        <img src="images/viaduct-path.jpg">
+        <h4 class="section-text">
+            Consulting our graph from before and using our value of 5.50 m/s (3sf) for the average velocity of a 10m web with starting angle 80°, we can say that it will take spiderman 15.4 (3sf) seconds (60sqrt(2)/5.50) to reach the end of his path this way. An average, healthy man (which Spider-Man should be able to easily beat) can run 100m at around 13-14 seconds<sup>[11]</sup>, which would mean covering this 60m distance in about 7.8-8.4 seconds - much faster than swinging in this way at this height. Although the film scene looks much cooler with the hero swinging from the ceiling, it is both more practical and quicker for him to run in this instance. In the film, however, he does choose a slightly more economical pathway and he can jump into each swing, driving each oscillation so that his velocity may be faster than that calculated. Especially with the high-rise nature of Manhattan and the great density of skyscrapers, the fact that his velocity increase with pendulum length means that swinging is definitely a good mode of transport at other times (especially to avoid rush-hour traffic).
+        </h4>
     </div>
     <a class="accordion">   
         <h3>How Does Spider-Man Stick To Walls?</h3>
     </a>
     <div class="panel">
         <h4 class="section-text"> 
-            The final thing we will consider in this section is how Spider-Man sticks to walls. This aspect of his abilities (like many others) has seen several different interpretations in Hollywood. The 2002 film <i>Spider-Man</i> starring Tobey Maguire explains Spider-Man's ability to cling to walls via sticky, retractable hairs on his hands as so<sup>[f]</sup>:
+            The final thing we will consider in this section is how Spider-Man sticks to walls. This aspect of his abilities (like many others) has seen several different interpretations in Hollywood. The 2002 film <i>Spider-Man</i> starring Tobey Maguire explains Spider-Man's ability to cling to walls via sticky, retractable hairs on his hands as so<sup>[h]</sup>:
         </h4>
         <img src="images/spiderman_hairs.jpg" width="100%">
         <h4 class="section-text">
-            However, in the film we're referencing, it is seen as an innate ability that Peter Parker wakes up with having been bitten by the radio-active spider. How might we try and explain this? In order to try and find out I consulted the book <i>The Gecko’s Foot: How Scientists are Taking a Leaf from Nature's Book</i> by Peter Forbes<sup>[9]</sup>, which has become a major source for this project. In this book, he talks about the underlying mechanisms that enable geckos (and spiders among other insects/creatures) to seemingly effortlessly traipse unaided up walls and across ceilings. 
+            However, in the film we're referencing, it is seen as an innate ability that Peter Parker wakes up with having been bitten by the radio-active spider. How might we try and explain this? In order to try and find out I consulted the book <i>The Gecko’s Foot: How Scientists are Taking a Leaf from Nature's Book</i> by Peter Forbes<sup>[12]</sup>, which has become a major source for this project. In this book, he talks about the underlying mechanisms that enable geckos (and spiders among other insects/creatures) to seemingly effortlessly traipse unaided up walls and across ceilings. 
             He writes (p.82) with reference to the Tokay Gecko (<i>Gecko gecko</i>):
         </h4>
         <h4 class="quotation">
-            "The electron microscope shows that there are very many bristles on the toes of a gecko: almost 500,000 on each foot. And more than that, the gecko has, as Autumn says, 'a bad case of split ends': the ends of the bristles fork into between 100 and 1,000 mini-bristles with enlarged and flattened spoon-like endings, spatulas, which, as Bob Full puts it, 'look like broccoli on the is of the hairs'. It is these spatulas that make contact with the surface and a single gecko has about one billion of these points of contact [below<sup>[g]</sup>]."
+            "The electron microscope shows that there are very many bristles on the toes of a gecko: almost 500,000 on each foot. And more than that, the gecko has, as Autumn says, 'a bad case of split ends': the ends of the bristles fork into between 100 and 1,000 mini-bristles with enlarged and flattened spoon-like endings, spatulas, which, as Bob Full puts it, 'look like broccoli on the is of the hairs'. It is these spatulas that make contact with the surface and a single gecko has about one billion of these points of contact [below<sup> [i]</sup>]."
         </h4>
         <img src="images/gecko_foot.jpg" width = 90% id="gecko">
         <h4 class="section-text">
@@ -120,7 +152,7 @@
             Combining the two quotations, we can first say that a typical gecko has 500,000 bristles on each foot, or 2,000,000 bristles in total. These 2,000,000 bristles, if all used would support up to 120kg, or about 1,180N (120 x 9.81 to 3sf). Therefore, each bristle would support 1,180/2,000,000N = 5.9x10<sup>-4</sup>N.
         </h4>
         <h4 class="section-text">
-            The average (median) mass of a male Tokay Gecko is 0.234kg<sup>[10]</sup>, which means that it overcompensates the maximum amount of weight it would hold (assuming it just holds its bodyweight) by a factor of around 500 (120/0.234 = 513 (3sf). Assuming Spider-Man is roughly 75kg, this would mean he would be able to hold (as a theoretical maximum) a grand total of 37,500kg. This equates to 63,600,000 (3sf) bristles in total. Although this may sound like a lot, when you consider that an average (median) male gecko is about 30cm long and think of the comparative surface areas covered by the gecko's hands/feet compared to that of a (nearly) adult male, it seems to be more plausible - the density of bristles shouldn't be drastically different.
+            The average (median) mass of a male Tokay Gecko is 0.234kg<sup>[13]</sup>, which means that it overcompensates the maximum amount of weight it would hold (assuming it just holds its bodyweight) by a factor of around 500 (120/0.234 = 513 (3sf). Assuming Spider-Man is roughly 75kg, this would mean he would be able to hold (as a theoretical maximum) a grand total of 37,500kg. This equates to 63,600,000 (3sf) bristles in total. Although this may sound like a lot, when you consider that an average (median) male gecko is about 30cm long<sup>[11]</sup> and think of the comparative surface areas covered by the gecko's hands/feet compared to that of a (nearly) adult male, it seems to be more plausible - the density of bristles shouldn't be drastically different.
         </h4>
         <h4 class="section-text">
             One final thing that we might want to think about when considering this is how much control Spider-Man would have over his ability to stick to things. In the film, when he first discovers his powers, he involuntarily sticks to objects but slowly over time seems to gain more control over it - it finally appears that it is almost controlled at will. The solution, once again, would probably be to mimic the mechanism of the gecko once more - if his hand is peeled away at an angle from the surface, the bonds are broken extraordinarily easily. The only problem that remains is how he would stick to walls through his costume - the van der Waals forces have an incredibly short range as previously discussed. This problem is considered and developed in the next section (link below).
@@ -164,13 +196,19 @@
             <sup>[7]</sup> Matweb.com. (n.d.). ASTM A36 Steel, MatWeb - The Online Materials Information Resource. [online] Available at: <a href="http://www.matweb.com/search/DataSheet.aspx?MatGUID=d1844977c5c8440cb9a3a967f8909c3a&ckck=1">http://www.matweb.com/search/DataSheet.aspx?MatGUID=d1844977c5c8440cb9a3a967f8909c3a&ckck=1</a> [Accessed 15 Aug. 2017].
         </p>
         <p>
-            <sup>[8]</sup>AverageHeight.co. (2017). Average Male Height. [online] Available at: <a href="http://www.averageheight.co/average-male-height-by-country">http://www.averageheight.co/average-male-height-by-country</a> [Accessed 24 Aug. 2017].
+            <sup>[8]</sup> Nelson, R. and Olsson, M. (1985). The pendulum - Rich physics from a simple system. [ebook] American Journal of Physics, p.2. Available at: <a href="http://fy.chalmers.se/~f7xiz/TIF080/pendulum.pdf">http://fy.chalmers.se/~f7xiz/TIF080/pendulum.pdf</a> [Accessed 25 Aug. 2017].
         </p>
         <p>
-            <sup>[9]</sup> Forbes, P. (2006). The Gecko’s Foot: How Scientists are Taking a Leaf from Nature's Book. London: Harper Perennial, pp.78-86.
+            <sup>[9]</sup> Onthesetofnewyork.com. (2012). The Amazing Spider-Man Film Locations. [online] Available at: <a href="http://onthesetofnewyork.com/theamazingspiderman.html">http://onthesetofnewyork.com/theamazingspiderman.html</a> [Accessed 25 Aug. 2017].
         </p>
         <p>
-            <sup>[10]</sup> Tokaygeckos.org. (2013). Tokay Gecko Fact Sheet. [online] Available at: <a href="http://www.tokaygeckos.org/tokay-gecko-fact-sheet">http://www.tokaygeckos.org/tokay-gecko-fact-sheet</a> [Accessed 24 Aug. 2017].
+            <sup>[10]</sup>AverageHeight.co. (2017). Average Male Height. [online] Available at: <a href="http://www.averageheight.co/average-male-height-by-country">http://www.averageheight.co/average-male-height-by-country</a> [Accessed 24 Aug. 2017].
+        </p>
+        <p>
+            <sup>[11]</sup> Forbes, P. (2006). The Gecko’s Foot: How Scientists are Taking a Leaf from Nature's Book. London: Harper Perennial, pp.78-86.
+        </p>
+        <p>
+            <sup>[12]</sup> Tokaygeckos.org. (2013). Tokay Gecko Fact Sheet. [online] Available at: <a href="http://www.tokaygeckos.org/tokay-gecko-fact-sheet">http://www.tokaygeckos.org/tokay-gecko-fact-sheet</a> [Accessed 24 Aug. 2017].
         </p>
         
     </div>
@@ -178,25 +216,31 @@
     <h4>IMAGES & MEDIA</h4>
     <div class="references-text">
         <p>
-            <sup>[a]</sup> CoolestClips4K (2017). Spider-Man vs. The Lizard ''Bridge Fight'' - The Amazing Spider-Man-(2012) Blu-ray 4K ULTRA HD. [video] Available at: https://www.youtube.com/embed/e1fmhSJa8ME?start=66&end=84 [Accessed 13 Aug. 2017].
+            <sup>[a]</sup> CoolestClips4K (2017). Spider-Man vs. The Lizard ''Bridge Fight'' - The Amazing Spider-Man-(2012) Blu-ray 4K ULTRA HD. [video] Available at: <a href="https://www.youtube.com/embed/e1fmhSJa8ME?start=66&end=84">https://www.youtube.com/embed/e1fmhSJa8ME?start=66&end=84</a> [Accessed 13 Aug. 2017].
         </p>
         <p>
-            <sup>[b]</sup> Mercedes-Benz S-Klasse Stretched Limousine [V221]. (2012). [image] Available at: http://www.imcdb.org/vehicle_501912-Mercedes-Benz-S-Klasse-Stretched-Limousine-V221.html [Accessed 13 Aug. 2017].
+            <sup>[b]</sup> Mercedes-Benz S-Klasse Stretched Limousine [V221]. (2012). [image] Available at: <a href="http://www.imcdb.org/vehicle_501912-Mercedes-Benz-S-Klasse-Stretched-Limousine-V221.html">http://www.imcdb.org/vehicle_501912-Mercedes-Benz-S-Klasse-Stretched-Limousine-V221.html</a> [Accessed 13 Aug. 2017].
         </p>
         <p>
-            <sup>[c]</sup> ClipsyBox (2017). Spider-man All Swinging Scenes.. [video] Available at: https://www.youtube.com/embed/CsencLwGCLI?start=440&end=463 [Accessed 16 Aug. 2017].
+            <sup>[c]</sup> ClipsyBox (2017). Spider-man All Swinging Scenes.. [video] Available at: <a href="https://www.youtube.com/embed/CsencLwGCLI?start=440&end=463">https://www.youtube.com/embed/CsencLwGCLI?start=440&end=463</a> [Accessed 16 Aug. 2017].
         </p>
         <p>
-            <sup>[d]</sup> Amazing Spider-Man Skateboarding Animation. (2012). [image] Available at: http://24.media.tumblr.com/tumblr_m4qodusPDI1ql1zp4o1_250.gif [Accessed 16 Aug. 2017].
+            <sup>[d]</sup> Amazing Spider-Man Skateboarding Animation. (2012). [image] Available at: <a href="http://24.media.tumblr.com/tumblr_m4qodusPDI1ql1zp4o1_250.gif">http://24.media.tumblr.com/tumblr_m4qodusPDI1ql1zp4o1_250.gif</a> [Accessed 16 Aug. 2017].
         </p>
         <p>
-            <sup>[e]</sup> Ruryk (2011). Oscillating Pendulum Animation. [image] Available at: https://en.wikipedia.org/wiki/File:Oscillating_pendulum.gif [Accessed 16 Aug. 2017].
+            <sup>[e]</sup> Ruryk (2011). Oscillating Pendulum Animation. [image] Available at: <a href="https://en.wikipedia.org/wiki/File:Oscillating_pendulum.gif">https://en.wikipedia.org/wiki/File:Oscillating_pendulum.gif</a> [Accessed 16 Aug. 2017].
         </p>
         <p>
-            <sup>[f]</sup> Marvel Entertainment, Laura Ziskin Productions (2002). Spider-Man Fingers. [image] Available at: https://i.stack.imgur.com/eJTDT.jpg [Accessed 24 Aug. 2017].
+            <sup>[f]</sup> Pendulum Mathematics Equation. (2017). [image] Available at: <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">https://en.wikipedia.org/wiki/Pendulum_(mathematics)</a> [Accessed 25 Aug. 2017].
         </p>
         <p>
-            <sup>[g]</sup> Peattie, A. (n.d.). Gecko Foot Tour. [image] Available at: http://www.cchem.berkeley.edu/rmgrp/about.html [Accessed 24 Aug. 2017].
+            <sup>[g]</sup> Pendulum Mathematics Equation. (2017). [image] Available at: <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">https://en.wikipedia.org/wiki/Pendulum_(mathematics)</a> [Accessed 25 Aug. 2017].
+        </p>        
+        <p>
+            <sup>[h]</sup> Marvel Entertainment, Laura Ziskin Productions (2002). Spider-Man Fingers. [image] Available at: <a href="https://i.stack.imgur.com/eJTDT.jpg">https://i.stack.imgur.com/eJTDT.jpg</a> [Accessed 24 Aug. 2017].
+        </p>
+        <p>
+            <sup>[i]</sup> Peattie, A. (n.d.). Gecko Foot Tour. [image] Available at: <a href="http://www.cchem.berkeley.edu/rmgrp/about.html">http://www.cchem.berkeley.edu/rmgrp/about.html</a> [Accessed 24 Aug. 2017].
         </p>
 
 

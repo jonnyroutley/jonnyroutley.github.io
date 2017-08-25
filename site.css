@@ -410,7 +410,7 @@ h4 a:hover {
 }
 
 #pendulum {
-    margin-left: 13vw;
+    margin-left: 12vw;
 }
 
 #skateboarding {
@@ -429,5 +429,22 @@ h4 a:hover {
     padding: 0vw 3vw;
     font-style: italic;
     line-height: 120%;
-    color: #3D3D3D;
+    color: #4C4C56;
+}
+
+#pend_table {
+    margin-left: 9vw;
+}
+
+#pend_graph {
+    margin-left: 4.8vw;
+}
+
+.body-list {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+
+#T_equation {
+    margin-left: 12vw;
 }

@@ -703,7 +703,7 @@
     #section-one-body{
         /* height: 150vh; */
         background-color: white;
-        padding: 5vw 24vw;
+        padding: 5vw 5vw;
     }
 
     .section-text {
@@ -822,7 +822,7 @@
     }
 
     .accordion h3 {
-        font-size: 1.5vw;
+        font-size: 5vw;
         width: 97.5%;
     }
 
@@ -838,7 +838,7 @@
 
     a.accordion h3:after {
         content: '\2190'; 
-        font-size: 1.5vw;
+        font-size: 5vw;
         /* margin-left: 2vw; */
         float:right;
         width: 1px;

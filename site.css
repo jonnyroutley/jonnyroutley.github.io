@@ -548,7 +548,7 @@
         font-style: normal;
         font-weight: 100;
         color: #9b9b9b;
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-align: center;
 
     }
@@ -558,7 +558,7 @@
         font-style: normal;
         font-weight: 100;
         color: #9b9b9b;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         text-align: center;
         margin: 0;
         margin-bottom: 1vw;
@@ -632,7 +632,7 @@
 
     #footer {
         background-color: #102027;
-        height: 80vh;
+        /* height: 80vh; */
         color: white;
         padding: 5vw 8vw;
         }
@@ -793,9 +793,9 @@
         height: 22vw;
     }
 
-    .references-text {
+    /* .references-text {
         column-count: 2;
-    }
+    } */
 
 
     #footer a {

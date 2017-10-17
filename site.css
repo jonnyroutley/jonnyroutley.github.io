@@ -330,6 +330,18 @@
     #maths_10 {
         margin-left: 2vw;
     }
+    #maths_11 {
+        margin-left: 17vw;
+    }
+    #maths_12 {
+        margin-left: 17vw;
+    }
+    #maths_13 {
+        margin-left: 17vw;
+    }
+    #rucksack {
+        margin-left: 10vw;
+    }
 
     iframe {
         margin: 1vw 6vw;
@@ -449,7 +461,11 @@
     #T_equation {
         margin-left: 12vw;
     }
+    #spinnerets {
+        margin-left: 15vw;
+    }
 }
+
 
 
 /* Main Page */

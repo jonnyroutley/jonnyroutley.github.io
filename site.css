@@ -164,7 +164,7 @@
 
     #about {
         background-color: white;
-        height: 65vh;
+        height: 85vh;
         padding: 5vw 8vw;
         color: #232323
     }
@@ -180,7 +180,14 @@
         /* height: 80vh; */
         color: white;
         padding: 5vw 8vw;
-        }
+    }
+
+    #footer1{
+        background-color: #102027;
+        height: 30vh;
+        color: white;
+        padding: 5vw 8vw;
+    }
 
 
 
@@ -211,15 +218,15 @@
     }
 
     #icon-one {
-        background-image: url('https://s-media-cache-ak0.pinimg.com/originals/b0/a7/84/b0a784ed11e57be8d173c50481bf81b8.jpg');
+        background-image: url('images/spidey_cover.jpg');
     }
 
     #icon-two {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Types_of_Carbon_Nanotubes.png');
+        background-image: url('images/gecko.jpg');
     }
 
     #icon-three {
-        background-image: url('http://explorebkv2.wpengine.com/wp-content/uploads/2014/05/williamsburg-bridge-brooklyn-sunset.jpg');
+        background-image: url('images/williamsburg.jpg');
     }
 
     .text-pages a {
@@ -366,6 +373,17 @@
         color: #66c1e2;
     }
 
+    #footer1 a {
+        font-family: 'Lato', 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #9b9b9b;
+    }
+
+    #footer1 a:hover {
+        font-family: 'Lato', 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #66c1e2;
+    }
 
     a.accordion {
         cursor: pointer;
@@ -410,9 +428,14 @@
         color: white;
     }
 
-    h4 a {
-        text-align: center;
+    .index_link {
         margin-left: 38vw;
+        text-align: center;
+    }
+
+    h4 a {
+
+
         text-decoration: none;
         color: #9F0808;
         
@@ -870,12 +893,14 @@
         color: white;
     }
 
-    h4 a {
+    .index_link {
         text-align: center;
         margin-left: 12vw;
+    }
+
+    h4 a {
         text-decoration: none;
         color: #9F0808;
-        
     }
 
     h4 a:hover {

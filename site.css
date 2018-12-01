@@ -13,8 +13,15 @@
         padding: 0px;
         width: 100%;
         position: fixed;
+        height: 2vh;
     }
 
+    .navigation{
+        position: absolute;
+        top: 0%;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+    }
 
 
     li a {
@@ -53,6 +60,11 @@
         font-size: 4vw;
         color: white;
         letter-spacing: 1vw;
+        position: absolute;
+        /* margin: 5vw, 5vw; */
+        top: 6%;
+        left: 13%;
+        /* transform: translate(-25%, -50%); */
     }
 
     h2 {
@@ -124,13 +136,14 @@
     }
 
     .parallax {
-        perspective: 1px;
-        height: 100vh;
+        /* perspective: 1px; */
+        /* height: 100vh; */
         overflow-x: hidden;
         overflow-y: auto;
+        /* display: inline-block; */
         }
 
-    .parallax__layer {
+    /* .parallax__layer {
         position: absolute;
         top: 0;
         right: 0;
@@ -141,37 +154,45 @@
     .parallax__layer--base {
         transform: translateZ(0);
         text-align: center;
-        }
+        } */
 
-    .parallax__layer--back {
+    /* .parallax__layer--back {
         transform: translateZ(-2px) scale(3);
         text-align: center;
         background-image: url(images/The-Amazing-Spider-Man-still-3.jpeg);
         width: 100vw;
+        height: 100vh;
         margin: 0;
         padding: 0;
         background-repeat: no-repeat;
         background-size: 105%;
         background-attachment: scroll;    
+        } */
 
-        }
-
+    .coverpage { 
+        /* height: 100vh; */
+        /* background-size: 105%; */
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
     .parallax__group {
         position: relative;
-        transform-style: preserve-3d;
-        height: 100vh;
+        /* transform-style: preserve-3d; */
+        /* height: 100vh; */
+        display: inline-block;
         }
 
     #about {
         background-color: white;
-        height: 85vh;
+        /* height: 100vh; */
         padding: 5vw 8vw;
         color: #232323
     }
 
     #contents {
         background-color: #f5f5f5;
-        height: 100vh;
+        /* height: 100vh; */
         padding: 5vw 8vw;
     }
 
@@ -489,7 +510,7 @@
     }
 }
 
-@media screen and (min-width: 1150px) and (max-width: px){
+@media screen and (min-width: 622px) and (max-width: 1150px){
     body {
         margin-top: 0px;
         margin-right: 0px;
@@ -980,7 +1001,7 @@
 
 /* Main Page */
 
-@media screen and (min-width: 0px) and (max-width: 1150px) {
+@media screen and (min-width: 0px) and (max-width: 622px) {
     body {
         margin-top: 0px;
         margin-right: 0px;
@@ -1451,8 +1472,3 @@
         margin-left: 12vw;
     }
 }
-
-/* above 1500
-between 892 and 1500
-between 622 and 892
-below 622 */

@@ -61,10 +61,8 @@
         color: white;
         letter-spacing: 1vw;
         position: absolute;
-        /* margin: 5vw, 5vw; */
         top: 6%;
         left: 13%;
-        /* transform: translate(-25%, -50%); */
     }
 
     h2 {
@@ -525,6 +523,12 @@
         position: fixed;
     }
 
+    .navigation{
+        position: absolute;
+        top: 0%;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+    }
 
 
     li a {
@@ -563,6 +567,9 @@
         font-size: 4vw;
         color: white;
         letter-spacing: 1vw;
+        position: absolute;
+        top: 6%;
+        left: 13%;
     }
 
     h2 {
@@ -634,13 +641,13 @@
     }
 
     .parallax {
-        perspective: 1px;
-        height: 100vh;
+        /* perspective: 1px; */
+        /* height: 100vh; */
         overflow-x: hidden;
         overflow-y: auto;
         }
 
-    .parallax__layer {
+    /* .parallax__layer {
         position: absolute;
         top: 0;
         right: 0;
@@ -664,12 +671,20 @@
         background-size: 105%;
         background-attachment: scroll;    
 
-        }
+        } */
+
+    .coverpage { 
+        /* height: 100vh; */
+        /* background-size: 105%; */
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 
     .parallax__group {
         position: relative;
-        transform-style: preserve-3d;
-        height: 100vh;
+        /* transform-style: preserve-3d; */
+        /* height: 100vh; */
+        display: inline-block;
         }
 
     #about {
@@ -1016,6 +1031,12 @@
         position: fixed;
     }
 
+    .navigation{
+        position: absolute;
+        top: 0%;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+    }
 
 
     li a {
@@ -1054,6 +1075,9 @@
         font-size: 5.8vw;
         color: white;
         letter-spacing: 1vw;
+        position: absolute;
+        bottom: 50%;
+        left: 0%;
     }
 
     h2 {
@@ -1125,13 +1149,13 @@
     }
 
     .parallax {
-        perspective: 1.1px;
-        height: 100vh;
+        /* perspective: 1.1px;
+        height: 100vh; */
         overflow-x: hidden;
         overflow-y: auto;
         }
 
-    .parallax__layer {
+    /* .parallax__layer {
         position: absolute;
         top: 0;
         right: 0;
@@ -1149,19 +1173,36 @@
         text-align: center;
         background-image: url(images/The-Amazing-Spider-Man-still-3.jpeg);
         max-width: 100vw;
-        /* height: 100vh; */
+        height: 100vh;
         margin: 0;
         padding: 0;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-attachment: fixed;     */
+        background-attachment: fixed;    
         background-position: 45%;
-        }
+        } */
+
+    .coverpage { 
+        height: 100vh;
+        width: 200vh;
+        margin-right: 50vw%;
+        /* background-size: 105%; */
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* object-fit: cover; */
+    }
+    .coverpage img{
+        /* object-fit: cover; */
+        /* background-size: cover; */
+        position: relative;
+        right: 55vw;;
+    }
 
     .parallax__group {
         position: relative;
-        transform-style: preserve-3d;
-        height: 100vh;
+        /* transform-style: preserve-3d; */
+        /* height: 100vh; */
+        display: inline-block;
         }
 
     #about {

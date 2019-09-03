@@ -1,0 +1,45 @@
+/* p {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+} */
+
+body {
+    background-color: white;
+    /* font-family: 'Lato', 'Open Sans', sans-serif; */
+    font-family: 'Crimson Text', serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.5vw;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(233, 233, 227);
+}
+
+.navlist {
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    padding: 1vw
+}
+
+.navlistitem {
+    display: table-cell;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.navlistitem a {
+    text-decoration: none;
+    color: black;
+}
+
+.navlistitem a:hover {
+    color: rgb(75, 73, 73);
+}

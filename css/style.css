@@ -1,0 +1,194 @@
+h1 {
+    font-size: calc(1em + 1vw);
+}
+
+.paginator {
+    text-align: center;
+    margin-top: 5vw;
+    /* bottom: 0; */
+}
+
+/* List Pages */
+
+.title_list {
+    text-align: center;
+}
+
+.title_summary {
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.title_summary a {
+    text-decoration: none;
+    color: black;
+}
+
+.title_summary a:hover {
+    color: rgb(58, 57, 57);
+
+}
+
+/* end */
+
+
+
+time {
+    font-size: 1.5em;
+    /* font-weight: bold; */
+}
+
+.post {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+footer {
+    text-align: right;
+    margin: 2vw;
+}
+
+
+body {
+    background-color: white;
+    /* font-family: 'Lato', 'Open Sans', sans-serif; */
+    font-family: 'Crimson Text', serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Styling for the header */
+
+#title {
+    text-align: center;
+    font-size: calc(1.2em + 1vw);
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.5vw;
+}
+
+
+
+#navbar {
+    width: 100%;
+    background-color: rgb(233, 233, 227);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: calc(12px);
+    margin: 0;
+    z-index: 100;
+}
+
+#navlist {
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.navlistitem {
+    display: table-cell;
+    text-align: center;
+    font-size: calc(0.5em + 0.8vw);
+}
+
+.navlistitem a {
+    text-decoration: none;
+    color: black;
+}
+
+.navlistitem a:hover {
+    color: rgb(58, 57, 57);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+    /* width: 100%; */
+}
+
+.buffer {
+    margin-top: calc(55px + 3vw);
+}
+
+
+
+strong {
+    font-family: 'Crimson Text Semibold', serif;
+
+}
+
+/* End styling for header */
+
+
+/* Styling for recipe column on resize */
+@media screen and (max-width: 600px) {
+        .recipe {
+            margin: auto;
+            width: 90%;
+        }
+    }
+
+
+
+
+/* End of Food Page */
+
+
+
+/* Photography Page  */
+
+.image_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+  /* Create four equal columns that sits next to each other */
+.image_column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    box-sizing: border-box;
+    /* margin: 0 4px; */
+}
+  
+.image_column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+img {
+    image-orientation: from-image;
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.image_column {
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.image_column {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+
+
+/* .image {
+    width:30vw;
+} */
+
+
+/* End of photography page */

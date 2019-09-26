@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jonathan Routley</title>
+    <title>Homepage on Jonathan Routley</title>
     <link>http://jonathanroutley.com/</link>
-    <description>Recent content on Jonathan Routley</description>
+    <description>Recent content in Homepage on Jonathan Routley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 24 Sep 2019 09:45:47 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2019 17:06:08 +0100</lastBuildDate>
     
 	<atom:link href="http://jonathanroutley.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -35,15 +35,14 @@
       <pubDate>Wed, 18 Sep 2019 13:04:21 +0100</pubDate>
       
       <guid>http://jonathanroutley.com/photography/</guid>
-      <description>Cameras:
- Nikon FM2 Olympus OM-10     F m2 01
+      <description>Shot with a Nikon FM2 (28-85mm f/3.6) and an Olympus OM-10 (50mm f/1.8)
+   F m2 01
       F m2 02
       F m2 03
       F m2 04
       F m2 05
       F m2 06
-      F m2 07
-      F m2 08</description>
+      F m2 07</description>
     </item>
     
     <item>

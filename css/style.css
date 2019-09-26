@@ -2,6 +2,27 @@ h1 {
     font-size: calc(1em + 1vw);
 }
 
+p a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+p a:hover {
+    color: rgb(58, 57, 57);
+}
+
+#main_page {
+    text-align: center;
+}
+
+#index_page {
+    /* margin: auto;
+    width: 50%;
+    height: 100%; */
+    text-align: center;
+}
+
+
 .paginator {
     text-align: center;
     margin-top: 5vw;
@@ -128,7 +149,7 @@ strong {
 
 /* Styling for recipe column on resize */
 @media screen and (max-width: 600px) {
-        .recipe {
+        .post {
             margin: auto;
             width: 90%;
         }

@@ -2,7 +2,7 @@ h1 {
     font-size: calc(1em + 1vw);
 }
 
-p a {
+p a, li a {
     /* text-decoration: none; */
     color: black;
 }
@@ -11,7 +11,11 @@ p a:hover {
     color: rgb(58, 57, 57);
 }
 
-#main_page {
+li a:hover {
+    color: rgb(58, 57, 57);
+}
+
+#photography_page {
     text-align: center;
 }
 

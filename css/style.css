@@ -1,3 +1,5 @@
+/* Global Styling */
+
 h1 {
     font-size: calc(1em + 1vw);
 }
@@ -51,9 +53,39 @@ li a:hover {
 }
 
 .title_summary a:hover {
-    color: rgb(58, 57, 57);
+    color: rgb(75, 76, 77);
 
 }
+
+/* Tooltip styling */
+
+.definition {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(234, 237, 237);
+    color: black;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.term {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.term:hover .definition {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 
 /* end */
 
@@ -98,7 +130,7 @@ body {
 
 #navbar {
     width: 100%;
-    background-color: rgb(233, 233, 227);
+    background-color: rgb(234, 237, 237);
     overflow: hidden;
     box-sizing: border-box;
     padding: calc(12px);
@@ -127,7 +159,7 @@ body {
 }
 
 .navlistitem a:hover {
-    color: rgb(58, 57, 57);
+    color: rgb(75, 76, 77);
 }
 
 .sticky {

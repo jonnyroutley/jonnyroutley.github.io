@@ -37,13 +37,19 @@ li a:hover {
 
 /* List Pages */
 
+.list_page {
+    margin: auto;
+    width: 50%;
+    height: 100%;  
+}
 .title_list {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .title_summary {
+    font-family: 'Roboto Mono', monospace;
     font-size: 1em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -110,10 +116,16 @@ footer {
 
 body {
     background-color: white;
-    /* font-family: 'Lato', 'Open Sans', sans-serif; */
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Mono', monospace;
     overflow-x: hidden;
     margin: 0;
+}
+p {
+    font-family: 'Roboto Slab', serif;
+
+}
+strong {
+    font-family: 'Roboto Slab', serif;
 }
 
 /* Styling for the header */
@@ -121,7 +133,6 @@ body {
 #title {
     text-align: center;
     font-size: calc(1.2em + 1vw);
-    font-family: 'Crimson Text', serif;
     letter-spacing: 0.2vw;
     word-spacing: 0.5vw;
 }
@@ -150,7 +161,7 @@ body {
 .navlistitem {
     display: table-cell;
     text-align: center;
-    font-size: calc(0.5em + 0.8vw);
+    font-size: calc(0.4em + 0.8vw);
 }
 
 .navlistitem a {
@@ -175,10 +186,7 @@ body {
 
 
 
-strong {
-    font-family: 'Crimson Text Semibold', serif;
 
-}
 
 /* End styling for header */
 

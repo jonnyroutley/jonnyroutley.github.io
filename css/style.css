@@ -3,18 +3,85 @@
     --link-hover-color: rgb(82, 82, 82);
     --title-font: "Roboto Mono", monospace;
     --body-font: "Roboto Slab", serif;
+    --accent-color: rgb(234, 237, 237);
 }
 
+/* ----------Default: Portrait Mobile---------- */
+/* ----------Global Styling---------- */
 
-/* Global Styling */
+/* Styling for the header */
+
+#title {
+    text-align: center;
+    font-size: 1.4em;
+    /* letter-spacing: 0.15em; */
+}
+
+#navbar {
+    width: 100%;
+    background-color: var(--accent-color);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0;
+    z-index: 100;
+}
+
+#navlist {
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    /* table-layout: auto; */
+    margin: 0;
+    padding: 0;
+}
+
+.navlistitem {
+    display: table-cell;
+    text-align: center;
+    font-size: 0.8em;
+    /* font-size: calc(0.4em + 0.8vw); */
+}
+
+.navlistitem a {
+    text-decoration: none;
+    color: black;
+}
+
+.navlistitem a:hover {
+    color: var(--link-hover-color);
+}
+
+.nav-text-long {
+    display: none;
+}
+
+.material-icons.md-20 { font-size: 20px; }
+
+
+
 
 h1 {
-    font-size: calc(1em + 1vw);
+    font-size: 1.2em
 }
 
-p a {
-    /* Used on code page to keep links black even after a click */
-    color: black;
+time {
+    /* Date/Time given on recipes/posts */
+    font-size: 1.1em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.75em;
+    font-family: var(--body-font);
+}
+
+ul, ol {
+    padding-left: 30px;
 }
 
 p a:hover {
@@ -25,31 +92,71 @@ li a:hover {
     color: var(--link-hover-color);
 }
 
-#photography_page {
-    text-align: center;
-}
 
-#index_page {
-    /* margin: auto;
-    width: 50%;
-    height: 100%; */
-    text-align: center;
+footer {
+    text-align: right;
+    margin: 2vw;
 }
 
 
-.paginator {
-    text-align: center;
-    margin-top: 5vw;
-    /* bottom: 0; */
+body {
+    background-color: white;
+    font-family: var(--title-font);
+    overflow-x: hidden;
+    margin: 0;
 }
+
+
+/* Tooltip styling */
+
+.definition {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(234, 237, 237);
+    color: black;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    /* top: -5px; */
+    /* left: 110%; */
+    top: 100%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -75px; /* Use half of width */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip:hover {
+    color: var(--link-hover-color);
+}
+
+.tooltip:hover .definition {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .definition::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    right: 50%; 
+    margin-top: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent var(--accent-color) transparent;
+}
+
 
 /* List Pages */
 
-.list_page {
-    margin: auto;
-    width: 50%;
-    height: 100%;  
-}
 
 .title_summary a {
     font-family: var(--title-font);
@@ -69,154 +176,29 @@ li a:hover {
     font-family: var(--body-font);
 }
 
-/* Tooltip styling */
 
-.definition {
-    visibility: hidden;
-    width: 150px;
-    background-color: rgb(234, 237, 237);
-    color: black;
-    border-radius: 6px;
-    padding: 8px;
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 110%;
-    opacity: 0;
-    transition: opacity 0.5s;
+.paginator {
+    text-align: center;
+    margin-top: 5vh;
 }
 
-.term {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+/* ----------About---------- */
+#index_page {
+    text-align: center;
 }
-
-.term:hover {
-    color: var(--link-hover-color);
-}
-
-.term:hover .definition {
-    visibility: visible;
-    opacity: 1;
-}
-
-
-/* #TODO: Make Tooltip appear below if screen size is small*/
-
-
-/* end */
-
-
-
-time {
-    font-size: 1.5em;
-    /* font-weight: bold; */
-}
-
-.post {
+/* ----------Blog---------- */
+/* ----------Food---------- */
+.post, .list_page {
     margin: auto;
-    width: 50%;
-    height: 100%;
+    width: 85%;
+    /* height: 100%; */
 }
 
-footer {
-    text-align: right;
-    margin: 2vw;
-}
-
-
-body {
-    background-color: white;
-    font-family: var(--title-font);
-    overflow-x: hidden;
-    margin: 0;
-}
-p {
-    font-family: var(--body-font);
-
-}
-
-
-/* Styling for the header */
-
-#title {
+/* ----------Photography---------- */
+#photography_page {
     text-align: center;
-    font-size: calc(1.2em + 1vw);
-    letter-spacing: 0.2vw;
-    word-spacing: 0.5vw;
 }
 
-
-
-#navbar {
-    width: 100%;
-    background-color: rgb(234, 237, 237);
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: calc(12px);
-    margin: 0;
-    z-index: 100;
-}
-
-#navlist {
-    list-style-type: none;
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-    margin: 0;
-    padding: 0;
-}
-
-.navlistitem {
-    display: table-cell;
-    text-align: center;
-    font-size: calc(0.4em + 0.8vw);
-}
-
-.navlistitem a {
-    text-decoration: none;
-    color: black;
-}
-
-.navlistitem a:hover {
-    color: var(--link-hover-color);
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    opacity: 0.8;
-    /* width: 100%; */
-}
-
-.buffer {
-    margin-top: calc(55px + 3vw);
-}
-
-
-
-
-
-/* End styling for header */
-
-
-/* Styling for recipe column on resize */
-@media screen and (max-width: 600px) {
-        .post {
-            margin: auto;
-            width: 90%;
-        }
-    }
-
-
-
-
-/* End of Food Page */
-
-
-
-/* Photography Page  */
 
 .image_row {
     display: flex;
@@ -266,4 +248,186 @@ img {
 } */
 
 
-/* End of photography page */
+/* ----------Code---------- */
+p a {
+    /* Used on code page to keep links black even after a click */
+    color: black;
+
+}
+
+
+@media (min-width: 480px) {
+/* ----------Landscape Mobile---------- */
+    
+    /* ----------Global Styling---------- */
+    
+    #title {
+        font-size: 1.45em;
+        letter-spacing: 0.15em;
+    }
+
+    .navlistitem {
+        font-size: 0.85em;
+    }
+
+    h1 {
+        font-size: 1.25em
+    }
+    
+    time {
+        /* Date/Time given on recipes/posts */
+        font-size: 1.15em;
+    }
+    
+    h2 {
+        font-size: 1.05em;
+    }
+    
+    p {
+        font-size: 0.8em;
+    }
+    
+
+
+    .nav-text-long {
+        display: inline-block;
+    }
+
+    .nav-text-short {
+        display: none;
+    }
+
+    /* Change tooltip to right instead of below  */
+    .definition {
+        top: -5px;
+        left: 110%;
+        margin: 0px;
+    }
+
+    .tooltip .definition::after {
+        top: 12%;
+        right: 100%; /* To the left of the tooltip */
+        border-color: transparent var(--accent-color) transparent transparent;
+    }
+
+    /* ----------About---------- */
+    /* ----------Blog---------- */
+    /* ----------Food---------- */
+    .post, .list_page {
+        margin: auto;
+        width: 70%;
+        height: 100%;
+    }
+
+
+    /* ----------Photography---------- */
+    /* ----------Code---------- */
+}
+    
+@media (min-width: 768px) {
+/* --------Tablet-------- */
+
+    /* ----------Global Styling---------- */
+    #title {
+        font-size: 1.5em;
+    }
+
+    .navlistitem {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.3em
+    }
+    
+    time {
+        /* Date/Time given on recipes/posts */
+        font-size: 1.2em;
+    }
+    
+    h2 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 0.85em;
+    }
+
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        opacity: 0.8;
+        /* width: 100%; */
+    }
+    
+    .buffer {
+        margin-top: calc(55px + 3vw);
+    }
+
+
+    /* ----------About---------- */
+    /* ----------Blog---------- */
+    /* ----------Food---------- */
+    .post, .list_page {
+        margin: auto;
+        width: 50%;
+        height: 100%;
+    }
+
+    /* ----------Photography---------- */
+    /* ----------Code---------- */
+
+}
+    
+    
+@media (min-width: 1024px) {
+/* Laptop+ */
+
+    /* ----------Global Styling---------- */
+    #title {
+        font-size: 1.55em;
+    }
+
+    .navlistitem {
+        font-size: 0.95em;
+    }
+
+    h1 {
+        font-size: 1.35em
+    }
+    
+    time {
+        /* Date/Time given on recipes/posts */
+        font-size: 1.25em;
+    }
+    
+    h2 {
+        font-size: 1.15em;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+    /* ----------About---------- */
+    /* ----------Blog---------- */
+    /* ----------Food---------- */
+    .post, .list_page {
+        margin: auto;
+        width: 40%;
+        height: 100%;
+    }
+
+    /* ----------Photography---------- */
+    /* ----------Code---------- */
+
+
+
+}
+
+
+
+
+
+
+

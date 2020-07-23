@@ -1,20 +1,28 @@
+/* Declare global variables */
+:root {
+    --link-hover-color: rgb(82, 82, 82);
+    --title-font: "Roboto Mono", monospace;
+    --body-font: "Roboto Slab", serif;
+}
+
+
 /* Global Styling */
 
 h1 {
     font-size: calc(1em + 1vw);
 }
 
-p a, li a {
-    /* text-decoration: none; */
+p a {
+    /* Used on code page to keep links black even after a click */
     color: black;
 }
 
 p a:hover {
-    color: rgb(58, 57, 57);
+    color: var(--link-hover-color);
 }
 
 li a:hover {
-    color: rgb(58, 57, 57);
+    color: var(--link-hover-color);
 }
 
 #photography_page {
@@ -42,25 +50,23 @@ li a:hover {
     width: 50%;
     height: 100%;  
 }
-.title_list {
-    /* text-align: center; */
-}
-
-.title_summary {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1em;
-    /* text-align: center; */
-}
-
 
 .title_summary a {
+    font-family: var(--title-font);
+    font-size: 1em;
     text-decoration: none;
     color: black;
+    border-bottom: 1px black solid;
+
 }
 
 .title_summary a:hover {
-    color: rgb(75, 76, 77);
+    color: var(--link-hover-color);
 
+}
+
+.title_summary strong {
+    font-family: var(--body-font);
 }
 
 /* Tooltip styling */
@@ -86,11 +92,17 @@ li a:hover {
     border-bottom: 1px dotted black;
 }
 
+.term:hover {
+    color: var(--link-hover-color);
+}
+
 .term:hover .definition {
     visibility: visible;
     opacity: 1;
 }
 
+
+/* #TODO: Make Tooltip appear below if screen size is small*/
 
 
 /* end */
@@ -116,17 +128,15 @@ footer {
 
 body {
     background-color: white;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--title-font);
     overflow-x: hidden;
     margin: 0;
 }
 p {
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--body-font);
 
 }
-strong {
-    font-family: 'Roboto Slab', serif;
-}
+
 
 /* Styling for the header */
 
@@ -170,7 +180,7 @@ strong {
 }
 
 .navlistitem a:hover {
-    color: rgb(75, 76, 77);
+    color: var(--link-hover-color);
 }
 
 .sticky {

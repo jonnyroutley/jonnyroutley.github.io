@@ -17,6 +17,7 @@
     /* letter-spacing: 0.15em; */
 }
 
+
 #navbar {
     width: 100%;
     background-color: var(--accent-color);
@@ -63,9 +64,17 @@
     vertical-align: text-bottom;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 
 h1 {
-    font-size: 1.3em
+    font-size: 1.3em;
+    margin-block-start: 18.6px;
+    margin-block-end: 18.6px;
 }
 
 time {

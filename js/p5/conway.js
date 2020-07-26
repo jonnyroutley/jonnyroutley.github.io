@@ -10,15 +10,18 @@ let fr = 25;
 let cycle = 0;
 let limit = 100;
 
-function setup() {
-  let canvas = createCanvas(700, 400);
+let divWidth = document.getElementById("p5-container").clientWidth
 
-  canvas.parent('p5-conway-container')
+function setup() {
+  let canvas = createCanvas(divWidth, 400);
+
+  canvas.parent('p5-container')
   frameRate(fr);
+  canvas.mouseClicked(canvClick);
 
   cellSize = 10;
-  columns = width/cellSize;
-  rows = height/cellSize;
+  columns = Math.floor(width/cellSize);
+  rows = Math.floor(height/cellSize);
   board = new Array(columns);
   next = new Array(columns);
   age = new Array(columns);
@@ -37,9 +40,9 @@ function draw() {
   frameRate(fr);
   for (let i = 0; i < columns; i++) {
     for (let j = 0; j < rows; j++) {
-      board[i][j] ? fill(age[i][j]*20) : fill(0);
+      board[i][j] ? fill(255) : fill(age[i][j]*15);
       stroke(235, 231, 223);
-      strokeWeight(0.4);
+      strokeWeight(0.2);
       rect(i * cellSize, j * cellSize, (i + 1) * cellSize, (j + 1) * cellSize);
     }
   }
@@ -50,9 +53,16 @@ function draw() {
   
 }
 
-function mousePressed() {
+//click on canvas to reset cycle
+function canvClick() {
   cycle = 0;
-  generate();  
+  generate()
+  loop()
+}
+
+//click anywhere to continue current cycle
+function mouseClicked() {
+  cycle = 0
   loop()
 }
 
@@ -90,7 +100,7 @@ function step() {
         age[x][y] = 1;
       } else {
         next[x][y] = 0;
-        age[x][y] = 0;
+        // age[x][y] = 0;
       }
       
     }

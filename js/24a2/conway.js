@@ -143,7 +143,7 @@ let config = {
     onKeyPress: onKeyPress,
     onDotClicked: onDotClicked,
     frameRate: 20,
-    containerId: "24a2-conway-container"
+    containerId: "24a2-container"
 };
 
 let game = new Game(config);

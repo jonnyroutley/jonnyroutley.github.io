@@ -17,7 +17,7 @@
       <pubDate>Mon, 27 Jul 2020 16:35:26 +0100</pubDate>
       
       <guid>https://jonathanroutley.com/code/p5/verostko/</guid>
-      <description></description>
+      <description>An attempt to make some art in the style of Roman Verostko. Use the slider at the bottom to adjust the drawing speed, click inside the canvas to reset the drawing or outside to keep the drawing going after the timeout.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Tue, 21 Jul 2020 15:15:01 +0100</pubDate>
       
       <guid>https://jonathanroutley.com/code/p5/conway/</guid>
-      <description>p5 version</description>
+      <description>A p5 attempt at making Conway&amp;rsquo;s game of life. Click inside the canvas to reset, or click outside to start the simulation again after the timeout. Each cell displays its history by colour - the lighter the cell, the more times that square has been alive.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Tue, 21 Jul 2020 14:41:15 +0100</pubDate>
       
       <guid>https://jonathanroutley.com/code/24a2/conway/</guid>
-      <description>24a2 version</description>
+      <description>version An attempt at making Conway&amp;rsquo;s game of life using 24a2. You can click cells to bring them to life, and if all the cells die (or a timer runs out) a colour map will appear of the history of cells (how many times that circle has been alive).</description>
     </item>
     
   </channel>

@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Euler</title>
+      <link>https://jonathanroutley.com/code/euler/</link>
+      <pubDate>Mon, 27 Jul 2020 20:48:34 +0100</pubDate>
+      
+      <guid>https://jonathanroutley.com/code/euler/</guid>
+      <description>Using some of Project Euler&amp;rsquo;s problems to help learn js.
+Problem 7: 10001st Prime Enter a number to check if it is prime: Submit
+Result: Enter a number x to find the xth prime number: Submit
+Result:
+Problem 11: Largest Product in GridNew Table</description>
+    </item>
+    
+    <item>
       <title>Verostko</title>
       <link>https://jonathanroutley.com/code/p5/verostko/</link>
       <pubDate>Mon, 27 Jul 2020 16:35:26 +0100</pubDate>
@@ -35,7 +48,7 @@
       <pubDate>Tue, 21 Jul 2020 14:41:15 +0100</pubDate>
       
       <guid>https://jonathanroutley.com/code/24a2/conway/</guid>
-      <description>version An attempt at making Conway&amp;rsquo;s game of life using 24a2. You can click cells to bring them to life, and if all the cells die (or a timer runs out) a colour map will appear of the history of cells (how many times that circle has been alive).</description>
+      <description>An attempt at making Conway&amp;rsquo;s game of life using 24a2. You can click cells to bring them to life, and if all the cells die (or a timer runs out) a colour map will appear of the history of cells (how many times that circle has been alive).</description>
     </item>
     
   </channel>

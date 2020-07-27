@@ -219,6 +219,22 @@ p a {
 
 }
 
+/* Euler */
+.cellHighlight {
+    color: red;
+}
+
+button {
+    font-family: var(--body-font);
+    background-color: var(--accent-color);
+    border: 0.5px black solid;
+}
+
+td {
+    padding: 0 1.5px;
+}
+
+
 
 @media (min-width: 480px) {
 /* ----------Landscape Mobile---------- */

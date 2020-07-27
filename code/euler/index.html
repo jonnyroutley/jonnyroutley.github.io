@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Jonathan Routley | Conway&#39;s Game Of Life</title>
+	<title>Jonathan Routley | Euler</title>
 	
 	
 	<link rel="stylesheet" href="/css/style.css">
@@ -59,15 +59,28 @@
 	
 	<main class = 'post' id="main_page">
 		<article>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-			<script src="https://cdn.jsdelivr.net/gh/jamesroutley/24a2/build/engine.js"></script>
-			<h1>Conway&#39;s Game Of Life</h1>
+			<h1>Euler</h1>
 			<div>
-				<p>An attempt at making Conway&rsquo;s game of life using <a href="https://24a2.routley.io">24a2</a>. You can click cells to bring them to life, and if all the cells die (or a timer runs out) a colour map will appear of the <em>history</em> of cells (how many times that circle has been alive).</p>
+				<p>Using some of <a href="https://projecteuler.net/">Project Euler</a>&rsquo;s problems to help learn js.</p>
+<h4 id="problem-7-10001supstsup-prime">Problem 7: 10001<sup>st</sup> Prime</h4>
+<p><label for="isPrime">Enter a number to check if it is prime:</label>
+<input type="text" id="isPrime" name="isPrime" required
+minlength="1" maxlength="10" size="10">
+<button type='button' onclick='getIsPrime();'>Submit</button></p>
+<p id='replaceIsPrime'>Result: </p>
+<p><label for='primePos'>Enter a number <em>x</em> to find the x<sup>th</sup> prime number:</label>
+<input type="text" id="primePos" name="primePos" required
+minlength="1" maxlength="6" size="10">
+<button type='button' onclick='getPrimePos();'>Submit</button></p>
+<p id='replacePrimePos'>Result:</p>
+<h4>Problem 11: Largest Product in Grid</h4>
+<p id ='replaceLargestProductInGrid'></p>
+<button onclick='getLargestProductInGrid()'>New Table</button>
+<br>
+<br>
+<div id="gridContainer"></div>
 
-				<div id='24a2-container'></div>
 			</div>
-			<script src="../../../js/24a2/conway.js"></script>
 			<div>
 				<ul id="tags">
 					
@@ -78,6 +91,8 @@
 			</div>
 		</article>
 	</main>
+	<script src="../../js/euler.js"></script>
+
 
 
 	<footer>

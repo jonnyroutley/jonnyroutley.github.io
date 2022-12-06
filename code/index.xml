@@ -6,11 +6,7 @@
     <description>Recent content in Code on Jonathan Routley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 23 Sep 2019 18:13:09 +0100</lastBuildDate>
-    
-	<atom:link href="https://jonathanroutley.com/code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Sep 2019 18:13:09 +0100</lastBuildDate><atom:link href="https://jonathanroutley.com/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Euler</title>
       <link>https://jonathanroutley.com/code/euler/</link>
@@ -21,7 +17,7 @@
 Problem 7: 10001st Prime Enter a number to check if it is prime: Submit
 Result: Enter a number x to find the xth prime number: Submit
 Result:
-Problem 11: Largest Product in GridNew Table</description>
+Problem 11: Largest Product in GridNew Table</description>
     </item>
     
     <item>

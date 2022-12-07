@@ -195,8 +195,18 @@ body {
 
 /* ----------About---------- */
 #index_page {
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#index_page div {
+    width: 500px; 
+    max-width: 100%;
+    padding: 20px
+}
+
 /* ----------Blog---------- */
 /* ----------Food---------- */
 .post, .list_page {

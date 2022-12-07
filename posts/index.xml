@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Jonathan Routley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 24 Sep 2019 09:45:47 +0100</lastBuildDate><atom:link href="https://jonathanroutley.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 21:41:13 +0000</lastBuildDate><atom:link href="https://jonathanroutley.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPT3 Recipe Writer</title>
+      <link>https://jonathanroutley.com/posts/gpt3-recipe-writer/</link>
+      <pubDate>Tue, 06 Dec 2022 21:41:13 +0000</pubDate>
+      
+      <guid>https://jonathanroutley.com/posts/gpt3-recipe-writer/</guid>
+      <description>I&amp;rsquo;ve seen ChatGPT everywhere at the moment so wanted to play around with the OpenAI API and see if I could come up with something useful (to me). I sometimes write up recipes for myself or friends, but have stopped largely due to laziness in making them properly readable. I wrote some code to flesh out the skeleton of a recipe into a fully-formed, readable recipe, and intend to use this regularly.</description>
+    </item>
+    
     <item>
       <title>Post 0</title>
       <link>https://jonathanroutley.com/posts/post-0/</link>

@@ -208,6 +208,33 @@ body {
 }
 
 /* ----------Blog---------- */
+/* blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+
+  blockquote p {
+    display: inline;
+  } */
+
+pre {
+    background-color: var(--accent-color);
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+.highlight div {
+    border-radius: 1vw;
+}
+
+pre code {
+    white-space: pre-wrap;
+}
+
 /* ----------Food---------- */
 .post, .list_page {
     margin: auto;

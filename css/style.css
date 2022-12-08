@@ -242,6 +242,12 @@ pre code {
     /* height: 100%; */
 }
 
+li {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-family: var(--body-font);
+}
+
 /* ----------Photography---------- */
 #photography_page {
     text-align: center;

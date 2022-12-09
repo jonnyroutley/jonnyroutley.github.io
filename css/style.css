@@ -277,7 +277,18 @@ td {
     padding: 0 1.5px;
 }
 
+blockquote {
+    padding: 0.1em 1em;
+    background-color: var(--accent-color);
+    border-left: 0.25em solid rgb(103, 103, 103);
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    border-radius: 0.2vw;
+}
 
+img {
+    border-radius: 0.5vw;
+}
 
 @media (min-width: 480px) {
 /* ----------Landscape Mobile---------- */

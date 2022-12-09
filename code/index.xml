@@ -8,6 +8,18 @@
     <language>en-GB</language>
     <lastBuildDate>Mon, 23 Sep 2019 18:13:09 +0100</lastBuildDate><atom:link href="https://jonathanroutley.com/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Pie, Robot</title>
+      <link>https://jonathanroutley.com/code/python/pie-robot/</link>
+      <pubDate>Fri, 09 Dec 2022 13:26:37 +0000</pubDate>
+      
+      <guid>https://jonathanroutley.com/code/python/pie-robot/</guid>
+      <description>A game made with Pyxel inspired by Pazzi and 625 Sandwich Stacker.
+You can play online here (desktop only)
+Order&amp;rsquo;s Up! Help your robot friend make pizzas by collecting the right ingredients and avoiding the bad stuff.
+robot gifScore points by collecting the ingredients (left/right arrow keys) shown in order. When a pizza is complete take it to the oven and hit space to clear the order and get a points bonus.</description>
+    </item>
+    
+    <item>
       <title>Euler</title>
       <link>https://jonathanroutley.com/code/euler/</link>
       <pubDate>Mon, 27 Jul 2020 20:48:34 +0100</pubDate>

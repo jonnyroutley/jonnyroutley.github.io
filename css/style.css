@@ -248,6 +248,23 @@ li {
     font-family: var(--body-font);
 }
 
+/* #salmon-table table { */
+    /* margin-left: 2vw; */
+/* } */
+
+th {
+    text-align: left;
+}
+
+td {
+    padding-right: 10vw;
+    font-family: var(--body-font);
+}
+
+td p {
+    margin: 0;
+}
+
 /* ----------Photography---------- */
 #photography_page {
     text-align: center;
@@ -268,12 +285,23 @@ p a {
 }
 
 button {
+    display: inline-block;
     font-family: var(--body-font);
     background-color: var(--accent-color);
     border: 0.5px black solid;
+    border-radius: 0.1em;
+    cursor: pointer;
+    box-shadow: 0 2px #999;
 }
 
-td {
+button:hover {background-color: #d9d9d9}
+
+button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
+
+#gridTable tbody tr td {
     padding: 0 1.5px;
 }
 

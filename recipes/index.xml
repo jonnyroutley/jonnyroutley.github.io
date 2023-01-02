@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homepage on Jonathan Routley</title>
-    <link>https://jonathanroutley.com/</link>
-    <description>Recent content in Homepage on Jonathan Routley</description>
+    <title>Recipes on Jonathan Routley</title>
+    <link>https://jonathanroutley.com/recipes/</link>
+    <description>Recent content in Recipes on Jonathan Routley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 26 Sep 2019 17:06:08 +0100</lastBuildDate><atom:link href="https://jonathanroutley.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Sep 2019 20:11:57 +0100</lastBuildDate><atom:link href="https://jonathanroutley.com/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smoked Salmon</title>
       <link>https://jonathanroutley.com/recipes/smoked-salmon/</link>
@@ -21,18 +21,6 @@ Ingredients These amounts are for 1.65kg of salmon - use the calculator below as
     </item>
     
     <item>
-      <title>Pie, Robot</title>
-      <link>https://jonathanroutley.com/code/python/pie-robot/</link>
-      <pubDate>Fri, 09 Dec 2022 13:26:37 +0000</pubDate>
-      
-      <guid>https://jonathanroutley.com/code/python/pie-robot/</guid>
-      <description>A game made with Pyxel inspired by Pazzi and 625 Sandwich Stacker.
-You can play online here (desktop only)
-Order&amp;rsquo;s Up! Help your robot friend make pizzas by collecting the right ingredients and avoiding the bad stuff.
-robot gifScore points by collecting the ingredients (left/right arrow keys) shown in order. When a pizza is complete take it to the oven and hit space to clear the order and get a points bonus.</description>
-    </item>
-    
-    <item>
       <title>Big Pot of Chickpeas</title>
       <link>https://jonathanroutley.com/recipes/big-pot-of-chickpeas/</link>
       <pubDate>Thu, 08 Dec 2022 16:29:15 +0000</pubDate>
@@ -42,15 +30,6 @@ robot gifScore points by collecting the ingredients (left/right arrow keys) sho
 Cook Time: ~2 hours + overnight soaking time
 This is a simple recipe for some braised chickpeas, with inspiration from Molly Baz&amp;rsquo;s Master Beans recipe from Cook This Book. Most dried beans should work in place here, and a slab of bacon would also work great added in. Feel free to change herbs/spices also.
 Ingredients 1kg Dried Chickpeas 2 Onions (or equivalent mix of alliums) 1-2 Heads of Garlic 1.</description>
-    </item>
-    
-    <item>
-      <title>GPT3 Recipe Writer</title>
-      <link>https://jonathanroutley.com/posts/gpt3-recipe-writer/</link>
-      <pubDate>Tue, 06 Dec 2022 21:41:13 +0000</pubDate>
-      
-      <guid>https://jonathanroutley.com/posts/gpt3-recipe-writer/</guid>
-      <description>I&amp;rsquo;ve seen ChatGPT everywhere at the moment so wanted to play around with the OpenAI API and see if I could come up with something useful (to me). I sometimes write up recipes for myself or friends, but have stopped largely due to laziness in making them properly readable. I wrote some code to flesh out the skeleton of a recipe into a fully-formed, readable recipe, and intend to use this regularly.</description>
     </item>
     
     <item>
@@ -67,28 +46,6 @@ Start by preparing the dashi - cut the onion(s) into slices, add to a saucepan a
     </item>
     
     <item>
-      <title>Euler</title>
-      <link>https://jonathanroutley.com/code/euler/</link>
-      <pubDate>Mon, 27 Jul 2020 20:48:34 +0100</pubDate>
-      
-      <guid>https://jonathanroutley.com/code/euler/</guid>
-      <description>Using some of Project Euler&amp;rsquo;s problems to help learn js.
-Problem 7: 10001st Prime Enter a number to check if it is prime: Submit
-Result: Enter a number x to find the xth prime number: Submit
-Result:
-Problem 11: Largest Product in GridNew Table</description>
-    </item>
-    
-    <item>
-      <title>Verostko</title>
-      <link>https://jonathanroutley.com/code/p5/verostko/</link>
-      <pubDate>Mon, 27 Jul 2020 16:35:26 +0100</pubDate>
-      
-      <guid>https://jonathanroutley.com/code/p5/verostko/</guid>
-      <description>An attempt to make some art in the style of Roman Verostko. Use the slider at the bottom to adjust the drawing speed, click inside the canvas to reset the drawing or outside to keep the drawing going after the timeout.</description>
-    </item>
-    
-    <item>
       <title>Sort-of-Teriyaki Salmon</title>
       <link>https://jonathanroutley.com/recipes/sort-of-teriyaki-salmon/</link>
       <pubDate>Wed, 22 Jul 2020 15:45:01 +0100</pubDate>
@@ -98,24 +55,6 @@ Problem 11: Largest Product in GridNew Table</description>
 Cook Time: 20 mins + marinade time
 A sort of teriyaki-style dish (garlic/ginger not traditional) that is pretty easy to improvise with. The measurments are rough - just try to keep the ratio equal.
 Ingredients 500g Salmon fillet 2 tbsp Fermented Garlic HoneyMix a head of peeled garlic cloves with a jar of raw honey and let sit at room temp, stirring every few days for at least a week before using.</description>
-    </item>
-    
-    <item>
-      <title>Conway&#39;s Game of Life</title>
-      <link>https://jonathanroutley.com/code/p5/conway/</link>
-      <pubDate>Tue, 21 Jul 2020 15:15:01 +0100</pubDate>
-      
-      <guid>https://jonathanroutley.com/code/p5/conway/</guid>
-      <description>A p5 attempt at making Conway&amp;rsquo;s game of life. Click inside the canvas to reset, or click outside to start the simulation again after the timeout. Each cell displays its history by colour - the lighter the cell, the more times that square has been alive.</description>
-    </item>
-    
-    <item>
-      <title>Conway&#39;s Game Of Life</title>
-      <link>https://jonathanroutley.com/code/24a2/conway/</link>
-      <pubDate>Tue, 21 Jul 2020 14:41:15 +0100</pubDate>
-      
-      <guid>https://jonathanroutley.com/code/24a2/conway/</guid>
-      <description>An attempt at making Conway&amp;rsquo;s game of life using 24a2. You can click cells to bring them to life, and if all the cells die (or a timer runs out) a colour map will appear of the history of cells (how many times that circle has been alive).</description>
     </item>
     
     <item>
@@ -166,53 +105,6 @@ Cook Time: 1 hour + extra for making filling
 Filling ideas: Char Siu, Minced Pork/Cabbage, Mixed Veg
 Ingredients 350g All-Purpose White Flour 2 Tsp Baking Powder 2 Tsp Dried Yeast 50g Caster Sugar 1 Tsp Salt 1 Tbsp Sesame Oil 175ml Water (Lukewarm) Filling of Your Choice Method Make the dough, fill, steam.
 Add the flour, baking powder, yeast, sugar and salt to a large mixing bowl. Add the sesame oil and water to the dry ingredients and mix until a dough starts to form.</description>
-    </item>
-    
-    <item>
-      <title>Post 0</title>
-      <link>https://jonathanroutley.com/posts/post-0/</link>
-      <pubDate>Tue, 24 Sep 2019 09:45:47 +0100</pubDate>
-      
-      <guid>https://jonathanroutley.com/posts/post-0/</guid>
-      <description>Welcome</description>
-    </item>
-    
-    <item>
-      <title>Photography</title>
-      <link>https://jonathanroutley.com/photography/</link>
-      <pubDate>Wed, 18 Sep 2019 13:04:21 +0100</pubDate>
-      
-      <guid>https://jonathanroutley.com/photography/</guid>
-      <description>Shot with a Nikon FM2 (28-85mm f/3.6) and an Olympus OM-10 (50mm f/1.8)
-Fm2 01
-Fm2 02
-Fm2 03
-Fm2 04
-Fm2 05
-Fm2 06
-Fm2 07
-Fm2 08
-Fm2 09
-Fm2 10
-Fm2 11
-Fm2 12
-Fm2 13
-Fm2 14
-Fm2 15
-Fm2 16
-Fm2 17
-Fm2 18
-Fm2 19
-Fm2 20
-Fm2 21
-Fm2 22
-Fm2 23
-Fm2 24
-Fm2 25
-Fm2 26
-Fm2 27
-Fm2 28
-Fm2 29</description>
     </item>
     
     <item>

@@ -248,6 +248,10 @@ li {
     font-family: var(--body-font);
 }
 
+
+li a {
+    color:black;
+}
 /* #salmon-table table { */
     /* margin-left: 2vw; */
 /* } */
@@ -343,6 +347,10 @@ img {
     
     h2 {
         font-size: 1.15em;
+    }
+
+    h3 {
+        font-size: 1.05em;
     }
     
     .nav-text-long {

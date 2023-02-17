@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jonathanroutley.com/posts/</loc>
+    <lastmod>2023-02-17T15:12:06+00:00</lastmod>
+  </url><url>
+    <loc>https://jonathanroutley.com/posts/urbanic-070s-coffee-grinder-guide/</loc>
+    <lastmod>2023-02-17T15:12:06+00:00</lastmod>
+  </url><url>
     <loc>https://jonathanroutley.com/recipes/nye22-cocktails/</loc>
     <lastmod>2023-01-09T19:00:03+00:00</lastmod>
   </url><url>
@@ -15,9 +21,6 @@
     <lastmod>2022-12-08T16:29:15+00:00</lastmod>
   </url><url>
     <loc>https://jonathanroutley.com/posts/gpt3-recipe-writer/</loc>
-    <lastmod>2022-12-06T21:41:13+00:00</lastmod>
-  </url><url>
-    <loc>https://jonathanroutley.com/posts/</loc>
     <lastmod>2022-12-06T21:41:13+00:00</lastmod>
   </url><url>
     <loc>https://jonathanroutley.com/recipes/katsudon/</loc>

@@ -76,6 +76,10 @@
         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
+        <loc>https://jonathanroutley.com/books/the-line-of-beauty/</loc>
+        <lastmod>2026-02-15</lastmod>
+    </url>
+    <url>
         <loc>https://jonathanroutley.com/books/the-ministry-of-time/</loc>
         <lastmod>2025-08-28</lastmod>
     </url>
@@ -236,6 +240,10 @@
         <lastmod>2025-01-13</lastmod>
     </url>
     <url>
+        <loc>https://jonathanroutley.com/films/sinners/</loc>
+        <lastmod>2026-01-01</lastmod>
+    </url>
+    <url>
         <loc>https://jonathanroutley.com/films/sleepless-in-seattle/</loc>
         <lastmod>2025-11-22</lastmod>
     </url>
@@ -258,6 +266,10 @@
     <url>
         <loc>https://jonathanroutley.com/films/the-hurt-locker/</loc>
         <lastmod>2025-10-27</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/films/the-killer/</loc>
+        <lastmod>2026-02-18</lastmod>
     </url>
     <url>
         <loc>https://jonathanroutley.com/films/the-last-of-us-s2/</loc>
@@ -308,6 +320,15 @@
         <lastmod>2025-01-05</lastmod>
     </url>
     <url>
+        <loc>https://jonathanroutley.com/read/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/read/2025/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/read/2026/</loc>
+    </url>
+    <url>
         <loc>https://jonathanroutley.com/recipes/</loc>
     </url>
     <url>
@@ -355,5 +376,8 @@
     </url>
     <url>
         <loc>https://jonathanroutley.com/watched/2025/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/watched/2026/</loc>
     </url>
 </urlset>

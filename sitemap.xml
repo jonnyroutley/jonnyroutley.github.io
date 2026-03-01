@@ -7,6 +7,10 @@
         <loc>https://jonathanroutley.com/blog/</loc>
     </url>
     <url>
+        <loc>https://jonathanroutley.com/blog/everything-i-watched-in-2025/</loc>
+        <lastmod>2026-03-01</lastmod>
+    </url>
+    <url>
         <loc>https://jonathanroutley.com/blog/gpt3-recipe-writer/</loc>
         <lastmod>2022-12-06</lastmod>
     </url>
@@ -62,6 +66,10 @@
     </url>
     <url>
         <loc>https://jonathanroutley.com/books/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/books/stories-of-your-life-and-others/</loc>
+        <lastmod>2026-02-01</lastmod>
     </url>
     <url>
         <loc>https://jonathanroutley.com/books/the-girl-with-the-dragon-tattoo/</loc>
@@ -341,5 +349,11 @@
     <url>
         <loc>https://jonathanroutley.com/recipes/stuffed-shells/</loc>
         <lastmod>2019-09-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/watched/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/watched/2025/</loc>
     </url>
 </urlset>

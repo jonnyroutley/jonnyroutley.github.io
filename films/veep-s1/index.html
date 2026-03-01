@@ -15,7 +15,7 @@
   <div class="desktop">
     <div class="window">
       <div class="title-bar">
-        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <a href="https://jonathanroutley.com" class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</a>
         <div class="title-bar-controls">
           <button class="title-bar-btn" aria-label="Minimize"
             onclick="this.closest('.window').classList.add('minimized')">_</button>
@@ -29,7 +29,8 @@
           <li class="menu-item">
             <button type="button" class="menu-trigger">File</button>
             <ul class="dropdown">
-              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a>
+              </li>
             </ul>
           </li>
           <li class="menu-item">

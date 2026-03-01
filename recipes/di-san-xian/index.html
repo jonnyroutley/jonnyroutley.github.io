@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Di San Xian — Jonathan Routley</title>
+  <meta name="description" content="Jonathan Routley">
+  <link rel="preload" href="/fonts/handjet-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dotgothic16.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://jonathanroutley.com/style.css">
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="title-bar">
+        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <div class="title-bar-controls">
+          <button class="title-bar-btn" aria-label="Minimize"
+            onclick="this.closest('.window').classList.add('minimized')">_</button>
+          <button class="title-bar-btn" aria-label="Maximize"
+            onclick="this.closest('.window').classList.remove('minimized')">&#9633;</button>
+          <button class="title-bar-btn title-bar-btn-close" aria-label="Close" disabled>&#10005;</button>
+        </div>
+      </div>
+      <nav class="menu-bar">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">File</button>
+            <ul class="dropdown">
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Navigate</button>
+            <ul class="dropdown">
+              <li><a href="https://jonathanroutley.com">About</a></li>
+              <li><a href="https://jonathanroutley.com/blog">Blog</a></li>
+              <li><a href="https://jonathanroutley.com/books">Books</a></li>
+              <li><a href="https://jonathanroutley.com/films">Film & TV</a></li>
+              <li><a href="https://jonathanroutley.com/recipes">Recipes</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Contact</button>
+            <ul class="dropdown">
+              <li><a href="mailto:me@jonathanroutley.com">Email</a></li>
+              <li><a href="https://github.com/jonnyroutley">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-routley-59974015a/">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-search">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+            <ul id="search-results" class="search-results"></ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="window-body">
+        
+<article>
+  <h1>Di San Xian</h1>
+  <time>2020-01-23</time>
+
+  
+  
+  <div class="content">
+    <p><strong>Yield:</strong> 2 large servings as a main or 4 as a side</p>
+<p><strong>Cook Time:</strong> 30 mins</p>
+<p>Slightly adapted quick + easy vegan dish from northern China. Serve with rice (and a fried egg!).</p>
+<h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>2 Aubergines</li>
+<li>1 Green Pepper</li>
+<li>4 Spring Onions</li>
+<li>2 Garlic Cloves</li>
+<li>2 tbsp Soy Sauce</li>
+<li>1/4 tsp Sugar</li>
+<li>1/4 tsp Salt</li>
+<li>1/2 tbsp Dark Soy Sauce</li>
+<li>3 tbsp Water</li>
+<li>Cornstarch</li>
+<li>(Optional) 1 tbsp Douchi/Fermented Black Beans</li>
+</ul>
+<h3 id="method">Method</h3>
+<p><em>Prep vegetables, make sauce, fry.</em></p>
+<ol>
+<li>Top and tail the aubergines, and then cut each into halves lengthways. Cut the halves into 4 long strips and then each strip into 2-3 pieces along a slight slant.</li>
+<li>Place the aubergines into a colander and salt well. Leave them for about 15 mins.</li>
+<li>In the meantime, cut the pepper into small pieces (like 2-3cm squares), mince the garlic, cut the spring onion whites into inch long sections and crush slightly with a knife. Thinly slice the spring onion greens along a slant.</li>
+<li>Mix the soy sauces, sugar, salt, water and a teaspoon of cornstarch together in a bowl.</li>
+<li>Pat the aubergine dry and then dust with cornflour until each piece has a thin coating.</li>
+<li>Heat a large pan over medium heat and add enough vegetable oil to coat the bottom. Add the aubergine and fry (in batches if necessary) for about 10 minutes or until golden on the outside and soft throughout. Remove and drain on a paper towel lined plate.</li>
+<li>Fry the pepper, spring onion whites and garlic (pouring out any excess oil as necessary) until fragrant and slightly softened. Add the black beans if using.</li>
+<li>Add the sauce into the pan (make sure to stir it beforehand to make sure the cornstarch is dispersed). Once the sauce is boiling, return the aubergine to the pan and mix well.</li>
+<li>Cook altogether for a few minutes, taste and adjust seasoning.</li>
+</ol>
+
+  </div>
+</article>
+
+      </main>
+      <div class="status-bar">
+        <span>&copy; 2026 Jonathan Routley</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button"
+      onclick="document.body.style.background=['#008080','#d66209','#000080','#800080','#2f4f4f','#8b0000','#556b2f','#4b0082'][Math.floor(Math.random()*8)]">&#127922;
+      Click me</button>
+    <div class="taskbar-tray">
+      <span id="tray-clock"></span>
+      <script>
+        (function () { var c = document.getElementById('tray-clock'); function t() { var d = new Date(); c.textContent = d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0') } t(); setInterval(t, 10000) })();
+      </script>
+    </div>
+  </div>
+  <script src="https://jonathanroutley.com/elasticlunr.min.js"></script>
+  <script src="https://jonathanroutley.com/search_index.en.js"></script>
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var resultsList = document.getElementById('search-results');
+      var index = elasticlunr.Index.load(window.searchIndex);
+
+      input.addEventListener('input', function () {
+        while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        var query = input.value.trim();
+        if (!query) { return; }
+        var hits = index.search(query, { expand: true }).slice(0, 5);
+        hits.forEach(function (hit) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = hit.ref;
+          a.textContent = hit.doc.title;
+          li.appendChild(a);
+          resultsList.appendChild(li);
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.menu-search')) {
+          while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>

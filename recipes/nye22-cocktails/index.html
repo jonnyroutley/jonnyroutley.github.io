@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NYE22 Cocktails — Jonathan Routley</title>
+  <meta name="description" content="Jonathan Routley">
+  <link rel="preload" href="/fonts/handjet-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dotgothic16.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://jonathanroutley.com/style.css">
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="title-bar">
+        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <div class="title-bar-controls">
+          <button class="title-bar-btn" aria-label="Minimize"
+            onclick="this.closest('.window').classList.add('minimized')">_</button>
+          <button class="title-bar-btn" aria-label="Maximize"
+            onclick="this.closest('.window').classList.remove('minimized')">&#9633;</button>
+          <button class="title-bar-btn title-bar-btn-close" aria-label="Close" disabled>&#10005;</button>
+        </div>
+      </div>
+      <nav class="menu-bar">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">File</button>
+            <ul class="dropdown">
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Navigate</button>
+            <ul class="dropdown">
+              <li><a href="https://jonathanroutley.com">About</a></li>
+              <li><a href="https://jonathanroutley.com/blog">Blog</a></li>
+              <li><a href="https://jonathanroutley.com/books">Books</a></li>
+              <li><a href="https://jonathanroutley.com/films">Film & TV</a></li>
+              <li><a href="https://jonathanroutley.com/recipes">Recipes</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Contact</button>
+            <ul class="dropdown">
+              <li><a href="mailto:me@jonathanroutley.com">Email</a></li>
+              <li><a href="https://github.com/jonnyroutley">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-routley-59974015a/">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-search">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+            <ul id="search-results" class="search-results"></ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="window-body">
+        
+<article>
+  <h1>NYE22 Cocktails</h1>
+  <time>2023-01-09</time>
+
+  
+  
+  <div class="content">
+    <p><strong>Yield:</strong> 8-10 cocktails (~1 Litre pre-dilution)</p>
+<p>These are two recipes for batched cocktails:</p>
+<ol>
+<li>A modified Cosmopolitan, with some ratio help from <a rel="external" href="https://www.youtube.com/watch?v=sbtfjNp_Bj8">Truffles on the Rocks</a></li>
+<li>A coffee Negroni, with inspiration from <a rel="external" href="https://www.youtube.com/watch?v=41iPKwfTE9E">Anders Erickson</a> and <a rel="external" href="https://www.youtube.com/watch?v=aVSQj-FsSSY">Dan Fellows</a>.</li>
+</ol>
+<h3 id="ingredients">Ingredients</h3>
+<p><strong>CosmoJonathan</strong></p>
+<ul>
+<li>300ml Vodka</li>
+<li>200ml Cointreau</li>
+<li>200ml Lime Juice</li>
+<li>200ml Cranberry Juice</li>
+<li>14g Angostura Bitters</li>
+<li>9g 5:1 Saline Solution</li>
+</ul>
+<p><strong>Jabroni</strong></p>
+<ul>
+<li>300ml Gin</li>
+<li>300ml Campari</li>
+<li>300ml Coffee Saccharum*</li>
+<li>9g 5:1 Saline Solution</li>
+</ul>
+<p>* See the Dan Fellows video above, or substitute a coffee liquor like Mr. Black.</p>
+<h3 id="method">Method</h3>
+<p><em>Measure, combine, serve.</em></p>
+<ol>
+<li>Measure all the ingredients.</li>
+<li>Combine and bottle. Keep the mix at room temperature.</li>
+<li>To serve, fill a glass with ice and add 100-125ml of cocktail mix. Stir well to chill and dilute.</li>
+</ol>
+<blockquote>
+<p>NB: The coffee Negroni and most of the Cosmo can be assembled well in advance of drinking, but the limes for the Cosmo should be juiced on the same day the drink is intended to be served.</p>
+</blockquote>
+
+  </div>
+</article>
+
+      </main>
+      <div class="status-bar">
+        <span>&copy; 2026 Jonathan Routley</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button"
+      onclick="document.body.style.background=['#008080','#d66209','#000080','#800080','#2f4f4f','#8b0000','#556b2f','#4b0082'][Math.floor(Math.random()*8)]">&#127922;
+      Click me</button>
+    <div class="taskbar-tray">
+      <span id="tray-clock"></span>
+      <script>
+        (function () { var c = document.getElementById('tray-clock'); function t() { var d = new Date(); c.textContent = d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0') } t(); setInterval(t, 10000) })();
+      </script>
+    </div>
+  </div>
+  <script src="https://jonathanroutley.com/elasticlunr.min.js"></script>
+  <script src="https://jonathanroutley.com/search_index.en.js"></script>
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var resultsList = document.getElementById('search-results');
+      var index = elasticlunr.Index.load(window.searchIndex);
+
+      input.addEventListener('input', function () {
+        while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        var query = input.value.trim();
+        if (!query) { return; }
+        var hits = index.search(query, { expand: true }).slice(0, 5);
+        hits.forEach(function (hit) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = hit.ref;
+          a.textContent = hit.doc.title;
+          li.appendChild(a);
+          resultsList.appendChild(li);
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.menu-search')) {
+          while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>

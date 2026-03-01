@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT3 Recipe Writer — Jonathan Routley</title>
+  <meta name="description" content="Jonathan Routley">
+  <link rel="preload" href="/fonts/handjet-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dotgothic16.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://jonathanroutley.com/style.css">
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="title-bar">
+        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <div class="title-bar-controls">
+          <button class="title-bar-btn" aria-label="Minimize"
+            onclick="this.closest('.window').classList.add('minimized')">_</button>
+          <button class="title-bar-btn" aria-label="Maximize"
+            onclick="this.closest('.window').classList.remove('minimized')">&#9633;</button>
+          <button class="title-bar-btn title-bar-btn-close" aria-label="Close" disabled>&#10005;</button>
+        </div>
+      </div>
+      <nav class="menu-bar">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">File</button>
+            <ul class="dropdown">
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Navigate</button>
+            <ul class="dropdown">
+              <li><a href="https://jonathanroutley.com">About</a></li>
+              <li><a href="https://jonathanroutley.com/blog">Blog</a></li>
+              <li><a href="https://jonathanroutley.com/books">Books</a></li>
+              <li><a href="https://jonathanroutley.com/films">Film & TV</a></li>
+              <li><a href="https://jonathanroutley.com/recipes">Recipes</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Contact</button>
+            <ul class="dropdown">
+              <li><a href="mailto:me@jonathanroutley.com">Email</a></li>
+              <li><a href="https://github.com/jonnyroutley">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-routley-59974015a/">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-search">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+            <ul id="search-results" class="search-results"></ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="window-body">
+        
+<article>
+  <h1>GPT3 Recipe Writer</h1>
+  <time>2022-12-06</time>
+
+  
+  
+  <div class="content">
+    <p>I've seen <a rel="external" href="https://openai.com/blog/chatgpt/">ChatGPT</a> everywhere at the moment so wanted to play around with the <a rel="external" href="https://openai.com/api/">OpenAI API</a> and see if I could come up with something useful (to me). I sometimes write up <a href="/recipes/">recipes</a> for myself or friends, but have stopped largely due to laziness in making them properly readable. I wrote some code to flesh out the skeleton of a recipe into a fully-formed, readable recipe, and intend to use this regularly.</p>
+<p>Full code on <a rel="external" href="https://github.com/jonnyroutley/gpt-recipe">GitHub</a></p>
+<h2 id="code">Code</h2>
+<p>This task is very simple to implement and largely follows the API docs:</p>
+<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;"><code data-lang="python"><span class="giallo-l"><span style="color: #CBA6F7;">def</span><span style="color: #89B4FA;font-style: italic;"> complete_recipe</span><span style="color: #9399B2;">(</span><span style="color: #EBA0AC;font-style: italic;">instruction</span><span style="color: #9399B2;">):</span></span>
+<span class="giallo-l"><span>    prompt</span><span style="color: #94E2D5;"> =</span><span style="color: #A6E3A1;"> &quot;&quot;&quot;</span></span>
+<span class="giallo-l"><span style="color: #A6E3A1;">    Turn the following lines from a recipe into a complete sentence, and give the output as a numbered list in markdown format: </span><span style="color: #F5C2E7;">{}</span></span>
+<span class="giallo-l"><span style="color: #A6E3A1;">    &quot;&quot;&quot;</span><span style="color: #9399B2;">.</span><span style="color: #89B4FA;">format</span><span style="color: #9399B2;">(</span><span>instruction</span><span style="color: #9399B2;">)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    response</span><span style="color: #94E2D5;"> =</span><span> openai</span><span style="color: #9399B2;">.</span><span>Completion</span><span style="color: #9399B2;">.</span><span style="color: #89B4FA;">create</span><span style="color: #9399B2;">(</span></span>
+<span class="giallo-l"><span style="color: #EBA0AC;font-style: italic;">        model</span><span style="color: #94E2D5;">=</span><span style="color: #A6E3A1;">&quot;text-davinci-003&quot;</span><span style="color: #9399B2;">,</span></span>
+<span class="giallo-l"><span style="color: #EBA0AC;font-style: italic;">        prompt</span><span style="color: #94E2D5;">=</span><span>prompt</span><span style="color: #9399B2;">,</span></span>
+<span class="giallo-l"><span style="color: #EBA0AC;font-style: italic;">        temperature</span><span style="color: #94E2D5;">=</span><span style="color: #FAB387;">0.4</span><span style="color: #9399B2;">,</span></span>
+<span class="giallo-l"><span style="color: #EBA0AC;font-style: italic;">        max_tokens</span><span style="color: #94E2D5;">=</span><span style="color: #FAB387;">1000</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">    )</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #CBA6F7;">    return</span><span> response</span><span style="color: #9399B2;">.</span><span style="color: #EBA0AC;font-style: italic;">choices</span><span style="color: #9399B2;">[</span><span style="color: #FAB387;font-style: italic;">0</span><span style="color: #9399B2;">].</span><span>text</span></span></code></pre>
+<p>The <em>temperature</em> parameter defines the 'riskiness' of the model. This app should favour lower temperatures (less risky) as we want to get repeatable results and are not looking for anything <em>too</em> creative.</p>
+<p>Running this code with the instruction input as:</p>
+<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;"><code data-lang="plain"><span class="giallo-l"><span>dice onion carrot</span></span>
+<span class="giallo-l"><span>mince garlic ginger</span></span>
+<span class="giallo-l"><span>heat wok medium-high add oil when shimmering add onion carrot</span></span>
+<span class="giallo-l"><span>stir fry until soft, add garlic and ginger</span></span>
+<span class="giallo-l"><span>when fragrant add rice wok stir fry 2-3 mins break clumps</span></span>
+<span class="giallo-l"><span>make space in middle, crack eggs, salt. Scramble when set break into chunks and mix in rice</span></span>
+<span class="giallo-l"><span>add soy sauce, sesame oil</span></span>
+<span class="giallo-l"><span>enjoy</span></span></code></pre>
+<p>We get this output:</p>
+<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;"><code data-lang="plain"><span class="giallo-l"><span>1. Dice the onion and carrot.</span></span>
+<span class="giallo-l"><span>2. Mince the garlic and ginger.</span></span>
+<span class="giallo-l"><span>3. Heat a wok to medium-high, add oil when shimmering, and add the onion and carrot.</span></span>
+<span class="giallo-l"><span>4. Stir fry until soft, then add the garlic and ginger.</span></span>
+<span class="giallo-l"><span>5. When fragrant, add the rice to the wok and stir fry for 2-3 minutes, breaking up any clumps.</span></span>
+<span class="giallo-l"><span>6. Make space in the middle, crack the eggs and add salt. Scramble the eggs until set, then break them into chunks and mix them into the rice.</span></span>
+<span class="giallo-l"><span>7. Add soy sauce and sesame oil.</span></span>
+<span class="giallo-l"><span>8. Enjoy!</span></span></code></pre>
+<p>This works pretty much exactly as intended. Varying the temperature between 0.0 and 1.0 for this example yields very similar results (save some punctuation changes).</p>
+
+  </div>
+</article>
+
+      </main>
+      <div class="status-bar">
+        <span>&copy; 2026 Jonathan Routley</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button"
+      onclick="document.body.style.background=['#008080','#d66209','#000080','#800080','#2f4f4f','#8b0000','#556b2f','#4b0082'][Math.floor(Math.random()*8)]">&#127922;
+      Click me</button>
+    <div class="taskbar-tray">
+      <span id="tray-clock"></span>
+      <script>
+        (function () { var c = document.getElementById('tray-clock'); function t() { var d = new Date(); c.textContent = d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0') } t(); setInterval(t, 10000) })();
+      </script>
+    </div>
+  </div>
+  <script src="https://jonathanroutley.com/elasticlunr.min.js"></script>
+  <script src="https://jonathanroutley.com/search_index.en.js"></script>
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var resultsList = document.getElementById('search-results');
+      var index = elasticlunr.Index.load(window.searchIndex);
+
+      input.addEventListener('input', function () {
+        while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        var query = input.value.trim();
+        if (!query) { return; }
+        var hits = index.search(query, { expand: true }).slice(0, 5);
+        hits.forEach(function (hit) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = hit.ref;
+          a.textContent = hit.doc.title;
+          li.appendChild(a);
+          resultsList.appendChild(li);
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.menu-search')) {
+          while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>

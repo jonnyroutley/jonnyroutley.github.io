@@ -7,11 +7,19 @@
         <loc>https://jonathanroutley.com/blog/</loc>
     </url>
     <url>
+        <loc>https://jonathanroutley.com/blog/gpt3-recipe-writer/</loc>
+        <lastmod>2022-12-06</lastmod>
+    </url>
+    <url>
         <loc>https://jonathanroutley.com/blog/hello-world/</loc>
         <lastmod>2026-02-28</lastmod>
     </url>
     <url>
         <loc>https://jonathanroutley.com/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/blog/urbanic-070s-coffee-grinder-guide/</loc>
+        <lastmod>2023-02-17</lastmod>
     </url>
     <url>
         <loc>https://jonathanroutley.com/books/</loc>
@@ -290,5 +298,48 @@
     <url>
         <loc>https://jonathanroutley.com/films/zodiac/</loc>
         <lastmod>2025-01-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/</loc>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/bao-dough/</loc>
+        <lastmod>2019-09-28</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/big-pot-of-chickpeas/</loc>
+        <lastmod>2022-12-08</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/celery-lime-mint-coriander-sorbet/</loc>
+        <lastmod>2019-10-02</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/di-san-xian/</loc>
+        <lastmod>2020-01-23</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/katsudon/</loc>
+        <lastmod>2020-09-29</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/nye22-cocktails/</loc>
+        <lastmod>2023-01-09</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/port-and-chicken-liver-pate/</loc>
+        <lastmod>2020-03-26</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/smoked-salmon/</loc>
+        <lastmod>2022-12-17</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/sort-of-teriyaki-salmon/</loc>
+        <lastmod>2020-07-22</lastmod>
+    </url>
+    <url>
+        <loc>https://jonathanroutley.com/recipes/stuffed-shells/</loc>
+        <lastmod>2019-09-05</lastmod>
     </url>
 </urlset>

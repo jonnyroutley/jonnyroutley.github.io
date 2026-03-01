@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smoked Salmon — Jonathan Routley</title>
+  <meta name="description" content="Jonathan Routley">
+  <link rel="preload" href="/fonts/handjet-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dotgothic16.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://jonathanroutley.com/style.css">
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="title-bar">
+        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <div class="title-bar-controls">
+          <button class="title-bar-btn" aria-label="Minimize"
+            onclick="this.closest('.window').classList.add('minimized')">_</button>
+          <button class="title-bar-btn" aria-label="Maximize"
+            onclick="this.closest('.window').classList.remove('minimized')">&#9633;</button>
+          <button class="title-bar-btn title-bar-btn-close" aria-label="Close" disabled>&#10005;</button>
+        </div>
+      </div>
+      <nav class="menu-bar">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">File</button>
+            <ul class="dropdown">
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Navigate</button>
+            <ul class="dropdown">
+              <li><a href="https://jonathanroutley.com">About</a></li>
+              <li><a href="https://jonathanroutley.com/blog">Blog</a></li>
+              <li><a href="https://jonathanroutley.com/books">Books</a></li>
+              <li><a href="https://jonathanroutley.com/films">Film & TV</a></li>
+              <li><a href="https://jonathanroutley.com/recipes">Recipes</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Contact</button>
+            <ul class="dropdown">
+              <li><a href="mailto:me@jonathanroutley.com">Email</a></li>
+              <li><a href="https://github.com/jonnyroutley">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-routley-59974015a/">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-search">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+            <ul id="search-results" class="search-results"></ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="window-body">
+        
+<article>
+  <h1>Smoked Salmon</h1>
+  <time>2022-12-17</time>
+
+  
+  
+  <div class="content">
+    <p><strong>Yield:</strong> Hard to say - enough for 16-24 starter-size portions</p>
+<p><strong>Cook Time:</strong> 5 days</p>
+<p>Salt and sugar amounts should stay the same but aromatics can be changed according to taste.</p>
+<h3 id="ingredients">Ingredients</h3>
+<p><em>These amounts are for 1.65kg of salmon - scale proportionally for different amounts.</em></p>
+<ul>
+<li>2 Sides of Salmon</li>
+<li>100g Salt</li>
+<li>100g Sugar</li>
+<li>15g Black Pepper</li>
+<li>2 Oranges</li>
+<li>2 Lemons</li>
+<li>2 tsp Fennel Seeds</li>
+</ul>
+<h3 id="method">Method</h3>
+<p><em>Cure, dry, smoke, rest.</em></p>
+<ol>
+<li>Grind the black pepper and fennel seeds into a coarse powder and zest the citrus.</li>
+<li>Mix all the cure ingredients together.</li>
+<li>Place both sides of salmon skin-side down on a large rimmed baking sheet and apply half the cure to each side. Rub in to make sure evenly-coated.</li>
+<li>In a large zip-lock bag (or vacuum seal bag, or a large sheet of clingfilm) lay down one of the sides skin-side down, then place the other side on top so the flesh-sides are together. Seal the bag (or vacuum seal/wrap well). Place in the fridge.</li>
+<li>Leave the salmon to cure for three days, turning the bag over every day.</li>
+<li>Remove the salmon from the bag and rinse well, then place on a baking sheet in the fridge overnight so the surface can dry out and form a pellicle.</li>
+<li>Cold smoke for 8-12 hours.</li>
+</ol>
+
+  </div>
+</article>
+
+      </main>
+      <div class="status-bar">
+        <span>&copy; 2026 Jonathan Routley</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button"
+      onclick="document.body.style.background=['#008080','#d66209','#000080','#800080','#2f4f4f','#8b0000','#556b2f','#4b0082'][Math.floor(Math.random()*8)]">&#127922;
+      Click me</button>
+    <div class="taskbar-tray">
+      <span id="tray-clock"></span>
+      <script>
+        (function () { var c = document.getElementById('tray-clock'); function t() { var d = new Date(); c.textContent = d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0') } t(); setInterval(t, 10000) })();
+      </script>
+    </div>
+  </div>
+  <script src="https://jonathanroutley.com/elasticlunr.min.js"></script>
+  <script src="https://jonathanroutley.com/search_index.en.js"></script>
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var resultsList = document.getElementById('search-results');
+      var index = elasticlunr.Index.load(window.searchIndex);
+
+      input.addEventListener('input', function () {
+        while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        var query = input.value.trim();
+        if (!query) { return; }
+        var hits = index.search(query, { expand: true }).slice(0, 5);
+        hits.forEach(function (hit) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = hit.ref;
+          a.textContent = hit.doc.title;
+          li.appendChild(a);
+          resultsList.appendChild(li);
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.menu-search')) {
+          while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urbanic 070s Coffee Grinder Guide — Jonathan Routley</title>
+  <meta name="description" content="Jonathan Routley">
+  <link rel="preload" href="/fonts/handjet-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dotgothic16.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://jonathanroutley.com/style.css">
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="title-bar">
+        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <div class="title-bar-controls">
+          <button class="title-bar-btn" aria-label="Minimize"
+            onclick="this.closest('.window').classList.add('minimized')">_</button>
+          <button class="title-bar-btn" aria-label="Maximize"
+            onclick="this.closest('.window').classList.remove('minimized')">&#9633;</button>
+          <button class="title-bar-btn title-bar-btn-close" aria-label="Close" disabled>&#10005;</button>
+        </div>
+      </div>
+      <nav class="menu-bar">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">File</button>
+            <ul class="dropdown">
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Navigate</button>
+            <ul class="dropdown">
+              <li><a href="https://jonathanroutley.com">About</a></li>
+              <li><a href="https://jonathanroutley.com/blog">Blog</a></li>
+              <li><a href="https://jonathanroutley.com/books">Books</a></li>
+              <li><a href="https://jonathanroutley.com/films">Film & TV</a></li>
+              <li><a href="https://jonathanroutley.com/recipes">Recipes</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Contact</button>
+            <ul class="dropdown">
+              <li><a href="mailto:me@jonathanroutley.com">Email</a></li>
+              <li><a href="https://github.com/jonnyroutley">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-routley-59974015a/">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-search">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+            <ul id="search-results" class="search-results"></ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="window-body">
+        
+<article>
+  <h1>Urbanic 070s Coffee Grinder Guide</h1>
+  <time>2023-02-17</time>
+
+  
+  
+  <div class="content">
+    <p>This is a rough guide to which setting to use on the Urbanic 070s grinder for a few different brewing methods, and some recipes I like using with them.</p>
+<p>I've modded my grinder to be stepless, and set the dial such that it <em>just</em> chirps when the pointer goes below (clockwise from) zero. This is covered in <a rel="external" href="https://www.youtube.com/watch?v=1EeJ4qHgSuA">this video from Lance Hedrick</a>.</p>
+<p>Recipes are in format:
+{<em>Recipe</em>} - {<em>creator's grind description</em>} - {<em>good starting setting</em>}</p>
+<hr />
+<h2 id="aeropress-8-10">Aeropress - 8-10</h2>
+<ul>
+<li><a rel="external" href="https://www.youtube.com/watch?v=VXPKxowfXDQ">Sprometheus' All-Round Brew Recipe</a> - <em>Medium-fine</em> - 9</li>
+<li><a rel="external" href="https://www.youtube.com/watch?v=Uw5nWy9NZxQ">Tuomas Merikanto's WAC2021 Winning Recipe</a> - <em>Medium-coarse</em> - 10</li>
+</ul>
+<h2 id="v60-7-9">V60 - 7-9</h2>
+<p>I use James Hoffmann's recipes, which are particularly good if you don't have a gooseneck kettle.</p>
+<ul>
+<li><a rel="external" href="https://www.youtube.com/watch?v=AI4ynXzkSQo">2+ Cup Recipe</a> - <em>Medium-fine</em> - 8.5</li>
+<li><a rel="external" href="https://www.youtube.com/watch?v=1oB1oDrDkHM">1 Cup Recipe</a> - <em>Medium-fine</em> - 8</li>
+</ul>
+<h2 id="cafetiere-french-press-14">Cafetiere/French Press - 14</h2>
+<ul>
+<li><a rel="external" href="https://www.youtube.com/watch?v=st571DYYTR8">Hoffmann's Ultimate French Press Technique</a> - <em>Medium-coarse</em> - 14</li>
+</ul>
+<h2 id="espresso-2-3">Espresso - 2-3</h2>
+<ul>
+<li><a rel="external" href="https://www.origincoffee.co.uk/blogs/journal/brewing-at-home-espresso">Origin's Guide</a> - <em>Fine</em> - 2</li>
+</ul>
+
+  </div>
+</article>
+
+      </main>
+      <div class="status-bar">
+        <span>&copy; 2026 Jonathan Routley</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button"
+      onclick="document.body.style.background=['#008080','#d66209','#000080','#800080','#2f4f4f','#8b0000','#556b2f','#4b0082'][Math.floor(Math.random()*8)]">&#127922;
+      Click me</button>
+    <div class="taskbar-tray">
+      <span id="tray-clock"></span>
+      <script>
+        (function () { var c = document.getElementById('tray-clock'); function t() { var d = new Date(); c.textContent = d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0') } t(); setInterval(t, 10000) })();
+      </script>
+    </div>
+  </div>
+  <script src="https://jonathanroutley.com/elasticlunr.min.js"></script>
+  <script src="https://jonathanroutley.com/search_index.en.js"></script>
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var resultsList = document.getElementById('search-results');
+      var index = elasticlunr.Index.load(window.searchIndex);
+
+      input.addEventListener('input', function () {
+        while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        var query = input.value.trim();
+        if (!query) { return; }
+        var hits = index.search(query, { expand: true }).slice(0, 5);
+        hits.forEach(function (hit) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = hit.ref;
+          a.textContent = hit.doc.title;
+          li.appendChild(a);
+          resultsList.appendChild(li);
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.menu-search')) {
+          while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Port and Chicken Liver Paté — Jonathan Routley</title>
+  <meta name="description" content="Jonathan Routley">
+  <link rel="preload" href="/fonts/handjet-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dotgothic16.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://jonathanroutley.com/style.css">
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="title-bar">
+        <span class="title-bar-text">Jonathan <span class="cjk">偉良</span> Routley</span>
+        <div class="title-bar-controls">
+          <button class="title-bar-btn" aria-label="Minimize"
+            onclick="this.closest('.window').classList.add('minimized')">_</button>
+          <button class="title-bar-btn" aria-label="Maximize"
+            onclick="this.closest('.window').classList.remove('minimized')">&#9633;</button>
+          <button class="title-bar-btn title-bar-btn-close" aria-label="Close" disabled>&#10005;</button>
+        </div>
+      </div>
+      <nav class="menu-bar">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">File</button>
+            <ul class="dropdown">
+              <li><a href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">Copy URL</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Navigate</button>
+            <ul class="dropdown">
+              <li><a href="https://jonathanroutley.com">About</a></li>
+              <li><a href="https://jonathanroutley.com/blog">Blog</a></li>
+              <li><a href="https://jonathanroutley.com/books">Books</a></li>
+              <li><a href="https://jonathanroutley.com/films">Film & TV</a></li>
+              <li><a href="https://jonathanroutley.com/recipes">Recipes</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-trigger">Contact</button>
+            <ul class="dropdown">
+              <li><a href="mailto:me@jonathanroutley.com">Email</a></li>
+              <li><a href="https://github.com/jonnyroutley">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-routley-59974015a/">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-search">
+            <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+            <ul id="search-results" class="search-results"></ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="window-body">
+        
+<article>
+  <h1>Port and Chicken Liver Paté</h1>
+  <time>2020-03-26</time>
+
+  
+  
+  <div class="content">
+    <p><strong>Yield:</strong> Approx 300-400ml</p>
+<p><strong>Cook Time:</strong> 30 mins + a few hours chilling time</p>
+<p>A recipe to use up any spare chicken livers that come with whole chickens or carcasses. Spread on toast or use for banh mi.</p>
+<h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>300g Chicken Livers</li>
+<li>1 Banana Shallot or 2-4 Regular (depending on size)</li>
+<li>1 Garlic Clove</li>
+<li>Zest from 1 Orange</li>
+<li>1 tsp Thyme Leaves</li>
+<li>1/4 tsp Ground Ginger</li>
+<li>1/2 tsp Salt</li>
+<li>50ml Double Cream</li>
+<li>50ml Port</li>
+<li>150g Unsalted Butter</li>
+</ul>
+<h3 id="method">Method</h3>
+<p><em>Clean livers, fry, blend, top with butter, set.</em></p>
+<ol>
+<li>Rinse then soak the livers in cold water for 10 mins or so. Pat dry then remove any excess gristle/fat and cut into 1.5cm pieces.</li>
+<li>Finely dice the shallot and garlic clove, and run a knife through the thyme leaves.</li>
+<li>Add a knob of butter to a pan over medium heat. Add the shallot, garlic and thyme and fry until fragrant and softened.</li>
+<li>Add the livers and fry until they're browned nicely all over, but still pink in the middle.</li>
+<li>Add the port and deglaze the pan, letting the port simmer until it reduces and becomes nice and thick.</li>
+<li>Transfer everything to a blender, add the zest, ginger, cream and salt and blend until smooth.</li>
+<li>Add 90g of the butter and blend until smooth again - taste and adjust seasoning.</li>
+<li>Pass the blended mixture through a sieve into a container and chill for 30 mins.</li>
+<li>Melt the remaining butter in a small pan and top the paté with it. Return to the fridge and let firm up for a few hours.</li>
+</ol>
+
+  </div>
+</article>
+
+      </main>
+      <div class="status-bar">
+        <span>&copy; 2026 Jonathan Routley</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button"
+      onclick="document.body.style.background=['#008080','#d66209','#000080','#800080','#2f4f4f','#8b0000','#556b2f','#4b0082'][Math.floor(Math.random()*8)]">&#127922;
+      Click me</button>
+    <div class="taskbar-tray">
+      <span id="tray-clock"></span>
+      <script>
+        (function () { var c = document.getElementById('tray-clock'); function t() { var d = new Date(); c.textContent = d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0') } t(); setInterval(t, 10000) })();
+      </script>
+    </div>
+  </div>
+  <script src="https://jonathanroutley.com/elasticlunr.min.js"></script>
+  <script src="https://jonathanroutley.com/search_index.en.js"></script>
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var resultsList = document.getElementById('search-results');
+      var index = elasticlunr.Index.load(window.searchIndex);
+
+      input.addEventListener('input', function () {
+        while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        var query = input.value.trim();
+        if (!query) { return; }
+        var hits = index.search(query, { expand: true }).slice(0, 5);
+        hits.forEach(function (hit) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = hit.ref;
+          a.textContent = hit.doc.title;
+          li.appendChild(a);
+          resultsList.appendChild(li);
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.menu-search')) {
+          while (resultsList.firstChild) { resultsList.removeChild(resultsList.firstChild); }
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
